@@ -4,6 +4,8 @@
 
 ## 上传软件
 
+支持json并压缩好的v2ray可以[在此下载](https://github.com/felix-fly/v2ray-openwrt/releases)
+
 将所有文件上传至路由器，并添加执行权限
 
 ```shell
