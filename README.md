@@ -1,17 +1,19 @@
 # v2ray-padavan-doh
 
-本文为在k2p路由器使用padavan(N56U/改华硕)固件安装配置v2ray及doh的进阶流程，v2ray一揽子方案（简单）在这里[v2ray-padavan](https://github.com/felix-fly/v2ray-padavan)，本文同时也是建立在此基础上的，有些内容不做过多说明，不明白可以先看一下此文。
+本文为在k2p路由器使用padavan(N56U/改华硕)固件安装配置v2ray的进阶流程，v2ray一揽子方案（简单）在这里[v2ray-padavan](https://github.com/felix-fly/v2ray-padavan)，本文同时也是建立在此基础上的，有些内容不做过多说明，不明白可以先看一下此文。
 
-## 上传软件
+前期v2ray是外置在storage下，现在改为将v2ray内置打包到padavan固件中。使用actions来构建，笔者使用的是k2p，如果是padavan支持的其它型号的路由，可以参考修改打造你自己的固件。
 
-支持json并压缩好的v2ray可以[在此下载](https://github.com/felix-fly/v2ray-openwrt/releases)
+编译好的纯净版固件可以[在release下载](https://github.com/felix-fly/v2ray-padavan-doh/releases)，默认只保留了ipset和单文件的[v2ray](https://github.com/felix-fly/v2ray-openwrt/releases)。需要其它插件的话可以自行修改**k2p.config**文件编译。
 
-将所有文件上传至路由器，并添加执行权限
+## 上传配置
+
+刷好固件后，将v2ray文件夹里的所有文件上传至路由器/etc/storage/v2ray目录，并添加脚本执行权限
 
 ```bash
 mkdir /etc/storage/v2ray
 cd /etc/storage/v2ray
-chmod +x v2ray https_dns_proxy *.sh
+chmod +x *.sh
 ```
 
 ## dnsmasq配置
@@ -40,16 +42,17 @@ conf-dir=/etc/storage/v2ray/,*.hosts
 
 ## 保存软件及配置
 
-padavan系统文件系统是构建在内存中的，重启后软件及配置会丢失，所以操作完成后，需要将v2ray及配置写入闪存。
+padavan系统文件系统是构建在内存中的，重启后软件及配置会丢失，所以操作完成后，需要将v2ray配置写入闪存。
 
 **高级设置 -> 系统管理 -> 配置管理 -> 保存内部存储到闪存: 提交**
 
-由于v2ray程序比较大，提交保存操作需要一定的时间，点过提交后请耐心等待1分钟，以确保写入成功。
+由于配置文件比较大，提交保存操作需要耐心等待几秒钟，以确保写入成功。
 
-如果一切顺利，重启路由器后你想要的v2ray依然在默默守护着你。Good luck!
+如果一切顺利，重启路由hi起来。Good luck!
 
 ## 更新记录
 2020-07-16
+* 内置v2ray
 * 去掉doh相关，dns通过v2ray解析
 
 2019-08-06
