@@ -1,41 +1,42 @@
 {
-    "log": {
-        "access": "./access.log",
-        "error": "./error.log",
-        "loglevel": "warning"
+  "inbounds": [{
+    "port": 12345,
+    "protocol": "dokodemo-door",
+    "settings": {
+      "network": "tcp",
+      "followRedirect": true
+    }
+  }, {
+    "port": 1053,
+    "protocol": "dokodemo-door",
+    "settings": {
+      "network": "udp",
+      "address": "1.1.1.1",
+      "port": 53
+    }
+  }],
+  "outbounds": [{
+    "protocol": "vmess",
+    "tag": "proxy",
+    "settings": {
+      "vnext": [{
+        "address": "==YOUR DOMAIN==",
+        "port": 443,
+        "users": [{
+          "id": "==YOUR USER ID==",
+          "alterId": 4
+        }]
+      }]
     },
-    "inbounds": [{
-        "port": 12345,
-        "protocol": "dokodemo-door",
-        "settings": {
-          "network": "tcp",
-          "timeout": 30,
-          "followRedirect": true
-        }
-    }],
-    "outbounds": [{
-        "protocol": "vmess",
-        "tag": "proxy",
-        "settings": {
-            "vnext": [{
-                "address": "==YOUR DOMAIN or SERVER ADDRESS==",
-                "port": 443,
-                "users": [{
-                    "id": "==YOUR USER ID==",
-                    "alterId" : 4
-                }]
-            }]
-        },
-        "streamSettings": {
-            "network" : "ws",
-            "security": "tls",
-            "wsSettings" : {
-                "path" : "\/==YOUR ENTRY PATH==\/"
-            },
-            "tlsSettings" : {
-                "serverName" : "==YOUR DOMAIN or SERVER ADDRESS==",
-                "allowInsecure" : true
-            }
-        }
-    }]
+    "streamSettings": {
+      "network" : "ws",
+      "security": "tls",
+      "tlsSettings" : {
+        "allowInsecure" : true
+      },
+      "wsSettings": {
+        "path": "/==YOUR ENTRY PATH==/"
+      }
+    }
+  }]
 }
