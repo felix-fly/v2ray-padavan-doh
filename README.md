@@ -16,6 +16,17 @@ cd /etc/storage/v2ray
 chmod +x *.sh
 ```
 
+使用tls加密时，如果需要验证证书合法性，请安装并配置[cacert.pem](https://curl.haxx.se/ca/cacert.pem)文件
+
+```bash
+# 上传至 /etc/storage/cacert.pem
+export SSL_CERT_FILE=/etc/storage/cacert.pem
+```
+
+否则在v2ray配置 `"allowInsecure": false` 时会报错
+
+> x509: certificate signed by unknown authority`
+
 ## dnsmasq配置
 
 通过padavan管理界面修改，dnsmasq拦截广告并将gw域名转给v2ray进行解析。
