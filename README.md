@@ -6,6 +6,10 @@
 
 编译好的纯净版固件可以[在release下载](https://github.com/felix-fly/v2ray-padavan-doh/releases)，默认只保留了ipset和单文件的[v2ray](https://github.com/felix-fly/v2ray-openwrt/releases)。需要其它插件的话可以自行修改**k2p.config**文件编译。
 
+v2ray使用tls相关协议时会需要验证证书的有效性，而padavan默认是没有包含ssl根证书的。简单的方式可以配置v2ray不验证，但是出于安全性的考虑，还是要验证的比较好。鉴于此，固件里内置了一份证书合集，放在了 ```/usr/lib/cacert.pem``` , 文件来源于 **https://curl.haxx.se/docs/caextract.html**
+
+> CA certificates extracted from Mozilla
+
 ## 上传配置
 
 刷好固件后，将v2ray文件夹里的所有文件上传至路由器/etc/storage/v2ray目录，并添加脚本执行权限
@@ -15,17 +19,6 @@ mkdir /etc/storage/v2ray
 cd /etc/storage/v2ray
 chmod +x *.sh
 ```
-
-使用tls加密时，如果需要验证证书合法性，请安装并配置[cacert.pem](https://curl.haxx.se/ca/cacert.pem)文件
-
-```bash
-# 上传至 /etc/storage/cacert.pem
-export SSL_CERT_FILE=/etc/storage/cacert.pem
-```
-
-否则在v2ray配置 `"allowInsecure": false` 时会报错
-
-> x509: certificate signed by unknown authority`
 
 ## dnsmasq配置
 
@@ -62,6 +55,10 @@ padavan系统文件系统是构建在内存中的，重启后软件及配置会�
 如果一切顺利，重启路由hi起来。Good luck!
 
 ## 更新记录
+2020-11-13
+* 内置证书文件
+* 增加ad-ext，过滤更为严格
+
 2020-07-16
 * 内置v2ray
 * 去掉doh相关，dns通过v2ray解析
