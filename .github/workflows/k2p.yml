@@ -10,15 +10,15 @@ jobs:
       - name: init
         run: |
           sudo apt-get update
-          sudo apt-get -y install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd cpio git python-docutils gettext automake autopoint texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev libmpc-dev libmpfr-dev libncurses5-dev libltdl-dev
+          sudo apt-get -y install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd fakeroot kmod cpio git python3-docutils gettext automake autopoint texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev ibmpc-dev libmpfr-dev libncurses5-dev libltdl-dev wget libc-dev-bin
       - name: build
         run: |
+          mkdir /opt/bin
           git clone --depth=1 https://github.com/hanwckf/rt-n56u.git /opt/rt-n56u
           cd /opt/rt-n56u/toolchain-mipsel
           sh dl_toolchain.sh
           cd /opt/rt-n56u/trunk
           wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/k2p.config -O configs/templates/K2P.config
-          sed -i '/module_smart_load("xt_set", NULL);/amodule_smart_load("xt_TPROXY", NULL);' user/rc/rc.c
 
           # enlarge the storage size
           # sed -i 's/CONFIG_MTD_STORE_PART_SIZ=0x80000/CONFIG_MTD_STORE_PART_SIZ=0x600000/' configs/boards/K2P/kernel-3.4.x-5.0.config
@@ -29,11 +29,12 @@ jobs:
           wget -P user/v2ray/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/v2ray/Makefile
           wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/user/Makefile -O user/Makefile
 
-          sudo ./clear_tree
-          sudo ./build_firmware_modify K2P
-          cd /opt
-          mkdir bin
-          mv /opt/rt-n56u/trunk/images/*.trx bin
+          # With v2ray & tproxy for others
+          sed -i '/module_smart_load("xt_set", NULL);/amodule_smart_load("xt_TPROXY", NULL);' user/rc/rc.c
+          sed -i 's/CONFIG_FIRMWARE_INCLUDE_V2RAY=n/CONFIG_FIRMWARE_INCLUDE_V2RAY=y/' configs/templates/K2P.config
+          fakeroot ./build_firmware_modify K2P
+
+          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p_4.2.trx
       - name: Upload artifact
         uses: actions/upload-artifact@master
         with:
