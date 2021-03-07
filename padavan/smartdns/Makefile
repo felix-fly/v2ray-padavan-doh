@@ -1,18 +1,16 @@
 THISDIR := $(shell pwd)
-SMARTDNS_URL_BASE :=  https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/smartdns
+SMARTDNS_URL_BASE :=  https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/smartdns
 
-SMARTDNS_NAME := smartdns
-SMARTDNS_URL := $(SMARTDNS_URL_BASE)/$(SMARTDNS_NAME)
-
-all: download_test
-	@echo "smartdns build done!"
+all: download_test extra_test
+	@echo "smartdns done"
 
 download_test:
-	( if [ ! -f $(SMARTDNS_NAME) ]; then \
-		wget -t5 --timeout=20 --no-check-certificate $(SMARTDNS_URL); \
-	fi )
+	wget -t5 --timeout=20 --no-check-certificate $(SMARTDNS_URL_BASE)/smartdns
+
+extra_test:
+  @echo "download smartdns"
 
 romfs:
 ifeq ($(CONFIG_FIRMWARE_INCLUDE_SMARTDNS),y)
-	$(ROMFSINST) -p +x $(THISDIR)/$(SMARTDNS_NAME) /usr/bin/$(SMARTDNS_NAME)
+	$(ROMFSINST) -p +x $(THISDIR)/smartdns /usr/bin/smartdns
 endif
