@@ -4,8 +4,8 @@ SMARTDNS_URL_BASE :=  https://raw.githubusercontent.com/felix-fly/v2ray-padavan-
 SMARTDNS_NAME := smartdns
 SMARTDNS_URL := $(SMARTDNS_URL_BASE)/$(SMARTDNS_NAME)
 
-all: download_test extra_test
-	@echo "v2ray build done!"
+all: download_test
+	@echo "smartdns build done!"
 
 download_test:
 	( if [ ! -f $(SMARTDNS_NAME) ]; then \
