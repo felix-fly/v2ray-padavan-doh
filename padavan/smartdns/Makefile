@@ -1,5 +1,5 @@
 THISDIR := $(shell pwd)
-SMARTDNS_URL_BASE :=  https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/smartdns
+SMARTDNS_URL_BASE :=  https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/bin
 
 SMARTDNS_NAME := smartdns
 SMARTDNS_URL := $(SMARTDNS_URL_BASE)/$(SMARTDNS_NAME)
