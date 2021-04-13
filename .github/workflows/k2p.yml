@@ -1,7 +1,7 @@
 on:
   push:
-    branches: 
-      - master
+    tags:
+      - v*
 
 jobs:
   build:
@@ -18,7 +18,7 @@ jobs:
           cd /opt/rt-n56u/toolchain-mipsel
           sh dl_toolchain.sh
           cd /opt/rt-n56u/trunk
-          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/k2p.config -O configs/templates/K2P.config
+          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/k2p-5.0.config -O configs/templates/K2P-5.0.config
 
           # enlarge the storage size
           # sed -i 's/CONFIG_MTD_STORE_PART_SIZ=0x80000/CONFIG_MTD_STORE_PART_SIZ=0x600000/' configs/boards/K2P/kernel-3.4.x-5.0.config
@@ -31,14 +31,21 @@ jobs:
           wget -P user/smartdns/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/smartdns/Makefile
           wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/user/Makefile -O user/Makefile
 
+          # Basic for me
+          sed -i '$a\CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y' configs/templates/K2P-5.0.config
+          fakeroot ./build_firmware_modify K2P-5.0
+          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p_me.trx
+
           # With v2ray & tproxy for others
-          sed -i '$a\CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y' configs/templates/K2P.config
+          ./clear_tree
           sed -i '/module_smart_load("xt_set", NULL);/amodule_smart_load("xt_TPROXY", NULL);' user/rc/rc.c
-          sed -i 's/CONFIG_FIRMWARE_INCLUDE_V2RAY=n/CONFIG_FIRMWARE_INCLUDE_V2RAY=y/' configs/templates/K2P.config
-          fakeroot ./build_firmware_modify K2P
-          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p_4.2.trx
+          sed -i 's/CONFIG_FIRMWARE_INCLUDE_V2RAY=n/CONFIG_FIRMWARE_INCLUDE_V2RAY=y/' configs/templates/K2P-5.0.config
+          fakeroot ./build_firmware_modify K2P-5.0
+          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p.trx
       - name: Upload artifact
-        uses: actions/upload-artifact@master
+        uses: "marvinpinto/action-automatic-releases@latest"
         with:
-          name: build
-          path: /opt/bin
+          repo_token: "${{ secrets.UPLOAD_KEY }}"
+          prerelease: false
+          files: |
+            /opt/bin/*.trx
