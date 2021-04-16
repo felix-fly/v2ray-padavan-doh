@@ -4,10 +4,18 @@ SMARTDNS_URL_BASE :=  https://raw.githubusercontent.com/felix-fly/v2ray-padavan-
 SMARTDNS_NAME := smartdns
 SMARTDNS_URL := $(SMARTDNS_URL_BASE)/$(SMARTDNS_NAME)
 
-all: download_test
+CERT_FILE := https://curl.se/ca/cacert.pem
+
+all: download_test extra_test
 	@echo "$(SMARTDNS_NAME) build done!"
 
 download_test:
+	( if [ ! -f $(V2RAY_NAME).tar.gz ]; then \
+		wget -t5 --timeout=20 --no-check-certificate -O $(V2RAY_NAME).tar.gz $(V2RAY_URL); \
+		wget -t5 --timeout=20 --no-check-certificate $(CERT_FILE); \
+	fi )
+
+extra_test:
 	( if [ ! -f $(SMARTDNS_NAME) ]; then \
 		wget -t5 --timeout=20 --no-check-certificate $(SMARTDNS_URL); \
 	fi )
@@ -15,4 +23,5 @@ download_test:
 romfs:
 ifeq ($(CONFIG_FIRMWARE_INCLUDE_SMARTDNS),y)
 	$(ROMFSINST) -p +x $(THISDIR)/$(SMARTDNS_NAME) /usr/bin/$(SMARTDNS_NAME)
+	$(ROMFSINST) -p -x $(THISDIR)/cacert.pem /usr/lib/cacert.pem
 endif

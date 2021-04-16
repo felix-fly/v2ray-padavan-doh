@@ -4,7 +4,7 @@ V2RAY_URL_BASE := https://github.com/felix-fly/v2ray-openwrt/releases/latest/dow
 V2RAY_NAME := v2ray-linux-mipsle
 V2RAY_URL := $(V2RAY_URL_BASE)/$(V2RAY_NAME).tar.gz
 
-CERT_FILE := https://curl.haxx.se/ca/cacert.pem
+CERT_FILE := https://curl.se/ca/cacert.pem
 
 all: download_test extra_test
 	@echo "v2ray build done!"
