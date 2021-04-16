@@ -1,9 +1,8 @@
 THISDIR := $(shell pwd)
-V2RAY_VER := 4.33.0
-V2RAY_URL_BASE := https://github.com/felix-fly/v2ray-openwrt/releases/download
+V2RAY_URL_BASE := https://github.com/felix-fly/v2ray-openwrt/releases/latest/download/
 
 V2RAY_NAME := v2ray-linux-mipsle
-V2RAY_URL := $(V2RAY_URL_BASE)/$(V2RAY_VER)/$(V2RAY_NAME).tar.gz
+V2RAY_URL := $(V2RAY_URL_BASE)/$(V2RAY_NAME).tar.gz
 
 CERT_FILE := https://curl.haxx.se/ca/cacert.pem
 
