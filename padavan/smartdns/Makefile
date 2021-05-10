@@ -6,18 +6,13 @@ SMARTDNS_URL := $(SMARTDNS_URL_BASE)/$(SMARTDNS_NAME)
 
 CERT_FILE := https://curl.se/ca/cacert.pem
 
-all: download_test extra_test
+all: download_test
 	@echo "$(SMARTDNS_NAME) build done!"
 
 download_test:
-	( if [ ! -f $(V2RAY_NAME).tar.gz ]; then \
-		wget -t5 --timeout=20 --no-check-certificate -O $(V2RAY_NAME).tar.gz $(V2RAY_URL); \
-		wget -t5 --timeout=20 --no-check-certificate $(CERT_FILE); \
-	fi )
-
-extra_test:
 	( if [ ! -f $(SMARTDNS_NAME) ]; then \
 		wget -t5 --timeout=20 --no-check-certificate $(SMARTDNS_URL); \
+		wget -t5 --timeout=20 --no-check-certificate $(CERT_FILE); \
 	fi )
 
 romfs:
