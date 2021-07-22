@@ -30,6 +30,7 @@ nameserver /1989report.hkja.org.hk/gw
 nameserver /1991way.com/gw
 nameserver /1998cdp.org/gw
 nameserver /1bao.org/gw
+nameserver /1drv.com/gw
 nameserver /1dumb.com/gw
 nameserver /1e100.net/gw
 nameserver /1eew.com/gw
@@ -155,6 +156,7 @@ nameserver /aculo.us/gw
 nameserver /adcex.com/gw
 nameserver /addictedtocoffee.de/gw
 nameserver /adelaidebbs.com/gw
+nameserver /adjust.com/gw
 nameserver /admin.recaptcha.net/gw
 nameserver /admob.com/gw
 nameserver /adpl.org.hk/gw
@@ -648,6 +650,7 @@ nameserver /boysmaster.com/gw
 nameserver /br.hao123.com/gw
 nameserver /br.st/gw
 nameserver /brainyquote.com/gw
+nameserver /branch.io/gw
 nameserver /brandonhutchinson.com/gw
 nameserver /braumeister.org/gw
 nameserver /bravotube.net/gw
@@ -970,6 +973,7 @@ nameserver /cloakpoint.com/gw
 nameserver /cloud.mail.ru/gw
 nameserver /cloudflare.com/gw
 nameserver /cloudfront.net/gw
+nameserver /cloudfunctions.net/gw
 nameserver /club1069.com/gw
 nameserver /clyp.it/gw
 nameserver /cmcn.org/gw
@@ -1057,6 +1061,7 @@ nameserver /coursehero.com/gw
 nameserver /cpj.org/gw
 nameserver /cq99.us/gw
 nameserver /crackle.com/gw
+nameserver /crashlytics.com/gw
 nameserver /crazys.cc/gw
 nameserver /crazyshit.com/gw
 nameserver /crbug.com/gw
@@ -1507,6 +1512,7 @@ nameserver /ezpc.tk/gw
 nameserver /ezpeer.com/gw
 nameserver /ezua.com/gw
 nameserver /fa.gov.tw/gw
+nameserver /fabric.io/gw
 nameserver /facebook.br/gw
 nameserver /facebook.com/gw
 nameserver /facebook.design/gw
@@ -2849,8 +2855,11 @@ nameserver /liuhanyu.com/gw
 nameserver /liujianshu.com/gw
 nameserver /liuxiaobo.net/gw
 nameserver /liuxiaotong.com/gw
+nameserver /live.com/gw
+nameserver /live.net/gw
 nameserver /livecoin.net/gw
 nameserver /livedoor.jp/gw
+nameserver /livefilestore.com/gw
 nameserver /liveleak.com/gw
 nameserver /livestation.com/gw
 nameserver /livestream.com/gw
@@ -3007,6 +3016,7 @@ nameserver /meridian-trust.org/gw
 nameserver /meripet.biz/gw
 nameserver /meripet.com/gw
 nameserver /merit-times.com.tw/gw
+nameserver /mesh.com/gw
 nameserver /meshrep.com/gw
 nameserver /mesotw.com/gw
 nameserver /messenger.com/gw
@@ -3026,8 +3036,10 @@ nameserver /mh4u.org/gw
 nameserver /mhradio.org/gw
 nameserver /michaelanti.com/gw
 nameserver /michaelmarketl.com/gw
+nameserver /microsoft-tst.com/gw
 nameserver /microsoft.com/gw
 nameserver /microsoft.com.nsatc.net/gw
+nameserver /microsoftonline.com/gw
 nameserver /microvpn.com/gw
 nameserver /middle-way.net/gw
 nameserver /mihk.hk/gw
@@ -3433,6 +3445,7 @@ nameserver /oculus.com/gw
 nameserver /oculuscdn.com/gw
 nameserver /oex.com/gw
 nameserver /offbeatchina.com/gw
+nameserver /office.com/gw
 nameserver /officeoftibet.com/gw
 nameserver /ofile.org/gw
 nameserver /ogaoga.org/gw
@@ -3457,6 +3470,7 @@ nameserver /omnitalk.org/gw
 nameserver /on.cc/gw
 nameserver /on2.com/gw
 nameserver /onapp.com/gw
+nameserver /onedrive.com/gw
 nameserver /onedrive.live.com/gw
 nameserver /onedumb.com/gw
 nameserver /onejav.com/gw
@@ -3886,6 +3900,7 @@ nameserver /renyurenquan.org/gw
 nameserver /research.jmsc.hku.hk/gw
 nameserver /resilio.com/gw
 nameserver /resistchina.org/gw
+nameserver /retropie.org.uk/gw
 nameserver /retweeteffect.com/gw
 nameserver /retweetist.com/gw
 nameserver /retweetrank.com/gw
@@ -3968,6 +3983,7 @@ nameserver /sakya.org/gw
 nameserver /salvation.org.hk/gw
 nameserver /samair.ru/gw
 nameserver /sambhota.org/gw
+nameserver /samsungapps.com/gw
 nameserver /sanmin.com.tw/gw
 nameserver /sapikachu.net/gw
 nameserver /sargasso.net/gw
@@ -4050,6 +4066,7 @@ nameserver /sfileydy.com/gw
 nameserver /sfshibao.com/gw
 nameserver /sftindia.org/gw
 nameserver /sftuk.org/gw
+nameserver /sfx.ms/gw
 nameserver /shadeyouvpn.com/gw
 nameserver /shadow.ma/gw
 nameserver /shadowsky.xyz/gw
@@ -4070,6 +4087,7 @@ nameserver /share.ovi.com/gw
 nameserver /share.youthwant.com.tw/gw
 nameserver /sharebee.com/gw
 nameserver /sharecool.org/gw
+nameserver /sharepoint.com/gw
 nameserver /sharpdaily.com.hk/gw
 nameserver /sharpdaily.hk/gw
 nameserver /sharpdaily.tw/gw
@@ -4301,6 +4319,7 @@ nameserver /stileproject.com/gw
 nameserver /sto.cc/gw
 nameserver /stoporganharvesting.org/gw
 nameserver /stoptibetcrisis.net/gw
+nameserver /storage.msn.com/gw
 nameserver /storagenewsletter.com/gw
 nameserver /store.steampowered.com/gw
 nameserver /stories.google/gw
@@ -5261,6 +5280,7 @@ nameserver /wikiwiki.jp/gw
 nameserver /wildammo.com/gw
 nameserver /williamhill.com/gw
 nameserver /willw.net/gw
+nameserver /windows.net/gw
 nameserver /windowsphoneme.com/gw
 nameserver /windscribe.com/gw
 nameserver /wingamestore.com/gw
@@ -5669,6 +5689,7 @@ ipset /1989report.hkja.org.hk/gw
 ipset /1991way.com/gw
 ipset /1998cdp.org/gw
 ipset /1bao.org/gw
+ipset /1drv.com/gw
 ipset /1dumb.com/gw
 ipset /1e100.net/gw
 ipset /1eew.com/gw
@@ -5794,6 +5815,7 @@ ipset /aculo.us/gw
 ipset /adcex.com/gw
 ipset /addictedtocoffee.de/gw
 ipset /adelaidebbs.com/gw
+ipset /adjust.com/gw
 ipset /admin.recaptcha.net/gw
 ipset /admob.com/gw
 ipset /adpl.org.hk/gw
@@ -6287,6 +6309,7 @@ ipset /boysmaster.com/gw
 ipset /br.hao123.com/gw
 ipset /br.st/gw
 ipset /brainyquote.com/gw
+ipset /branch.io/gw
 ipset /brandonhutchinson.com/gw
 ipset /braumeister.org/gw
 ipset /bravotube.net/gw
@@ -6609,6 +6632,7 @@ ipset /cloakpoint.com/gw
 ipset /cloud.mail.ru/gw
 ipset /cloudflare.com/gw
 ipset /cloudfront.net/gw
+ipset /cloudfunctions.net/gw
 ipset /club1069.com/gw
 ipset /clyp.it/gw
 ipset /cmcn.org/gw
@@ -6696,6 +6720,7 @@ ipset /coursehero.com/gw
 ipset /cpj.org/gw
 ipset /cq99.us/gw
 ipset /crackle.com/gw
+ipset /crashlytics.com/gw
 ipset /crazys.cc/gw
 ipset /crazyshit.com/gw
 ipset /crbug.com/gw
@@ -7146,6 +7171,7 @@ ipset /ezpc.tk/gw
 ipset /ezpeer.com/gw
 ipset /ezua.com/gw
 ipset /fa.gov.tw/gw
+ipset /fabric.io/gw
 ipset /facebook.br/gw
 ipset /facebook.com/gw
 ipset /facebook.design/gw
@@ -8488,8 +8514,11 @@ ipset /liuhanyu.com/gw
 ipset /liujianshu.com/gw
 ipset /liuxiaobo.net/gw
 ipset /liuxiaotong.com/gw
+ipset /live.com/gw
+ipset /live.net/gw
 ipset /livecoin.net/gw
 ipset /livedoor.jp/gw
+ipset /livefilestore.com/gw
 ipset /liveleak.com/gw
 ipset /livestation.com/gw
 ipset /livestream.com/gw
@@ -8646,6 +8675,7 @@ ipset /meridian-trust.org/gw
 ipset /meripet.biz/gw
 ipset /meripet.com/gw
 ipset /merit-times.com.tw/gw
+ipset /mesh.com/gw
 ipset /meshrep.com/gw
 ipset /mesotw.com/gw
 ipset /messenger.com/gw
@@ -8665,8 +8695,10 @@ ipset /mh4u.org/gw
 ipset /mhradio.org/gw
 ipset /michaelanti.com/gw
 ipset /michaelmarketl.com/gw
+ipset /microsoft-tst.com/gw
 ipset /microsoft.com/gw
 ipset /microsoft.com.nsatc.net/gw
+ipset /microsoftonline.com/gw
 ipset /microvpn.com/gw
 ipset /middle-way.net/gw
 ipset /mihk.hk/gw
@@ -9072,6 +9104,7 @@ ipset /oculus.com/gw
 ipset /oculuscdn.com/gw
 ipset /oex.com/gw
 ipset /offbeatchina.com/gw
+ipset /office.com/gw
 ipset /officeoftibet.com/gw
 ipset /ofile.org/gw
 ipset /ogaoga.org/gw
@@ -9096,6 +9129,7 @@ ipset /omnitalk.org/gw
 ipset /on.cc/gw
 ipset /on2.com/gw
 ipset /onapp.com/gw
+ipset /onedrive.com/gw
 ipset /onedrive.live.com/gw
 ipset /onedumb.com/gw
 ipset /onejav.com/gw
@@ -9525,6 +9559,7 @@ ipset /renyurenquan.org/gw
 ipset /research.jmsc.hku.hk/gw
 ipset /resilio.com/gw
 ipset /resistchina.org/gw
+ipset /retropie.org.uk/gw
 ipset /retweeteffect.com/gw
 ipset /retweetist.com/gw
 ipset /retweetrank.com/gw
@@ -9607,6 +9642,7 @@ ipset /sakya.org/gw
 ipset /salvation.org.hk/gw
 ipset /samair.ru/gw
 ipset /sambhota.org/gw
+ipset /samsungapps.com/gw
 ipset /sanmin.com.tw/gw
 ipset /sapikachu.net/gw
 ipset /sargasso.net/gw
@@ -9689,6 +9725,7 @@ ipset /sfileydy.com/gw
 ipset /sfshibao.com/gw
 ipset /sftindia.org/gw
 ipset /sftuk.org/gw
+ipset /sfx.ms/gw
 ipset /shadeyouvpn.com/gw
 ipset /shadow.ma/gw
 ipset /shadowsky.xyz/gw
@@ -9709,6 +9746,7 @@ ipset /share.ovi.com/gw
 ipset /share.youthwant.com.tw/gw
 ipset /sharebee.com/gw
 ipset /sharecool.org/gw
+ipset /sharepoint.com/gw
 ipset /sharpdaily.com.hk/gw
 ipset /sharpdaily.hk/gw
 ipset /sharpdaily.tw/gw
@@ -9940,6 +9978,7 @@ ipset /stileproject.com/gw
 ipset /sto.cc/gw
 ipset /stoporganharvesting.org/gw
 ipset /stoptibetcrisis.net/gw
+ipset /storage.msn.com/gw
 ipset /storagenewsletter.com/gw
 ipset /store.steampowered.com/gw
 ipset /stories.google/gw
@@ -10900,6 +10939,7 @@ ipset /wikiwiki.jp/gw
 ipset /wildammo.com/gw
 ipset /williamhill.com/gw
 ipset /willw.net/gw
+ipset /windows.net/gw
 ipset /windowsphoneme.com/gw
 ipset /windscribe.com/gw
 ipset /wingamestore.com/gw
