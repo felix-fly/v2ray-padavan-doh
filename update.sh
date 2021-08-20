@@ -14,4 +14,4 @@ sed 's/\/$/\/#/g' tmp > smartdns/ad-ext.hosts
 sed 's/server=/nameserver /g' v2ray/gw.hosts > tmp1
 sed 's/127.0.0.1#1053/gw/g' tmp1 > tmp2
 sed 's/=/ /g' tmp2 > smartdns/gw.hosts
-rm tmp1 tmp2
+rm tmp tmp1 tmp2
