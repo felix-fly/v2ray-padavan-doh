@@ -44,18 +44,18 @@ port=0
 
 ## 设置smartdns开机自动启动
 
-**高级设置 -> 自定义设置 -> 脚本 -> 在路由器启动后执行:**
+**系统管理 - 服务: 调度任务 (Crontab): 添加一行**
 
 ```bash
-/etc/storage/smartdns/check.sh &
+*/2 * * * * /etc/storage/smartdns/check.sh > /dev/null
 ```
 
 ## 测试效果
 
-可以在ssh手动执行脚本，稍等一会用ps命令查看smartdns是否启动成功。
+可以在ssh手动执行脚本，然后用ps命令查看smartdns是否启动成功。
 
 ```bash
-/etc/storage/smartdns/check.sh &
+/etc/storage/smartdns/check.sh
 ```
 
 在电脑上用 nslookup 查询看看，分别有效果哦

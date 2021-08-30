@@ -2,7 +2,7 @@
 
 本文为在k2p路由器使用padavan(N56U/改华硕)固件安装配置v2ray的进阶流程，v2ray一揽子方案（简单）在这里[v2ray-padavan](https://github.com/felix-fly/v2ray-padavan)，本文同时也是建立在此基础上的，有些内容不做过多说明，不明白可以先看一下此文。
 
-***固件增加了新选择xray，用法参考v2ray**
+***固件增加了新选择xray，用法参考v2ray，将v2ray相关的替换为xray即可**
 
 前期v2ray是外置在storage下，现在改为将v2ray内置打包到padavan固件中。使用actions来构建，笔者使用的是k2p，如果是padavan支持的其它型号的路由，可以参考修改打造你自己的固件。
 
@@ -44,10 +44,10 @@ conf-dir=/etc/storage/v2ray/,*.hosts
 
 ## 设置v2ray开机自动启动
 
-**高级设置 -> 自定义设置 -> 脚本 -> 在路由器启动后执行:**
+**系统管理 - 服务: 调度任务 (Crontab): 添加一行**
 
 ```bash
-/etc/storage/v2ray/check.sh &
+*/5 * * * * /etc/storage/v2ray/check.sh > /dev/null
 ```
 
 **高级设置 -> 自定义设置 -> 脚本 -> 在防火墙规则启动后执行:**

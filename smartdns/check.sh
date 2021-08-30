@@ -1,11 +1,15 @@
 #!/bin/sh
 
-sleep 5
+APP=/usr/bin/smartdns
+CONF=/etc/storage/smartdns/my.conf
 
-while true; do
-    server=`ps | grep -e "smartdns[[:space:]]\|smartdns$" | grep -v grep`
-    if [ ! "$server" ]; then
-        /usr/bin/smartdns -c /etc/storage/smartdns/my.conf
-    fi
-    sleep 60
-done
+NUM=`ps | grep -w $APP | grep -v grep | wc -l`
+if [ "$NUM" -lt "1" ];then
+  $APP -c $CONF
+elif [ "$NUM" -gt "1" ];then
+  pgrep -f $APP | xargs kill -9
+  sleep 1s
+  $APP -c $CONF
+fi
+
+exit 0
