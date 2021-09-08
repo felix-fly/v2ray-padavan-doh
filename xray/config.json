@@ -18,15 +18,16 @@
         "port": 443,
         "users": [{
           "id": "==YOUR USER ID==",
+          "flow": "xtls-rprx-splice",
           "encryption": "none"
         }]
       }]
     },
     "streamSettings": {
       "sockopt": {"mark": 255, "tproxy": "tproxy"},
-      "network": "ws",
-      "security": "tls",
-      "wsSettings": {"path": "/some-path"}
+      "network": "tcp",
+      "security": "xtls",
+      "xtlsSettings": {"serverName": "==YOUR DOMAIN=="}
     }
   }]
 }

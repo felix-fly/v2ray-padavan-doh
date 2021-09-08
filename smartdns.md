@@ -6,8 +6,6 @@
 
 笔者使用k2p做主路由，目前刷的是padavan自编译固件。由于k2p本身并没有usb接口，无法使用smartdns官方的方式进行安装。官方提供了mipsel平台静态编译好的二进制文件，但是体积较大，目前采用自行动态编译的小体积版本，这样就可以通过手工的方式进行安装，实现曲线救国。
 
-笔者编译的固件为纯净版，只包含了smartdns和v2ray。还有一个k2p_me.trx是我自己用的，因为v2ray独立放在了另外的r2s盒子上（类似旁路由），这个版本只内置了smartdns本身。
-
 **固件里不含相关的配置文件，只有软件本身。**
 
 ## 配置smartdns
@@ -34,12 +32,13 @@ chmod +x /etc/storage/smartdns/check.sh
 
 ## 配置dnsmasq
 
-通过padavan管理界面修改，禁用dnsmasq的dns服务。
+通过padavan管理界面修改，配置dnsmasq的上游dns使用smartdns。
 
 **内部网络(LAN) -> DHCP服务器 -> 自定义配置文件 "dnsmasq.conf"**
 
 ```bash
-port=0
+server=127.0.0.1#5353
+no-resolv
 ```
 
 ## 设置smartdns开机自动启动
@@ -48,6 +47,12 @@ port=0
 
 ```bash
 */2 * * * * /etc/storage/smartdns/check.sh > /dev/null
+```
+
+**高级设置 -> 自定义设置 -> 脚本 -> 在防火墙规则启动后执行:**
+
+```bash
+/etc/storage/smartdns/iptables.sh
 ```
 
 ## 测试效果
