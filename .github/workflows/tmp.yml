@@ -1,0 +1,58 @@
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: init
+        run: |
+          sudo apt-get update
+          sudo apt-get -y install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd fakeroot kmod cpio git python3-docutils gettext automake autopoint texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev libmpfr-dev libncurses5-dev libltdl-dev wget libc-dev-bin
+      - name: build
+        run: |
+          mkdir /opt/bin
+          git clone --depth=1 https://github.com/hanwckf/rt-n56u.git /opt/rt-n56u
+          cd /opt/rt-n56u/toolchain-mipsel
+          sh dl_toolchain.sh
+          cd /opt/rt-n56u/trunk
+          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/k2p.config -O configs/templates/K2P.config
+          sed -i 's/CONFIG_RT2880_FLASH_16M=y/#CONFIG_RT2880_FLASH_16M=y/' configs/boards/K2P/kernel-3.4.x-5.0.config
+          sed -i 's/# CONFIG_RT2880_FLASH_32M is not set/CONFIG_RT2880_FLASH_32M=y/' configs/boards/K2P/kernel-3.4.x-5.0.config
+          sed -i 's/CONFIG_RT2880_DRAM_128M=y/#CONFIG_RT2880_DRAM_128M=y/' configs/boards/K2P/kernel-3.4.x-5.0.config
+          sed -i 's/# CONFIG_RT2880_DRAM_512M is not set/CONFIG_RT2880_DRAM_512M=y/' configs/boards/K2P/kernel-3.4.x-5.0.config
+
+          # build-in smartdns
+          mkdir -p user/smartdns
+          wget -P user/smartdns/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/smartdns/Makefile
+          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/user/Makefile -O user/Makefile
+          sed -i '$a\export SSL_CERT_FILE=/usr/lib/cacert.pem' user/scripts/profile
+
+          # Basic for me
+          fakeroot ./build_firmware_modify K2P
+          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p_me.trx
+
+          # With v2ray & tproxy for others
+          ./clear_tree
+          mkdir -p user/v2ray
+          wget -P user/v2ray/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/v2ray/Makefile
+          sed -i '/module_smart_load("xt_set", NULL);/amodule_smart_load("xt_TPROXY", NULL);' user/rc/rc.c
+          sed -i 's/CONFIG_FIRMWARE_INCLUDE_V2RAY=n/CONFIG_FIRMWARE_INCLUDE_V2RAY=y/' configs/templates/K2P.config
+          fakeroot ./build_firmware_modify K2P
+          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p_v2ray.trx
+
+          # Use xray instead of v2ray
+          ./clear_tree
+          mkdir -p user/xray
+          wget -P user/xray/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/xray/Makefile
+          sed -i 's/CONFIG_FIRMWARE_INCLUDE_V2RAY=y/CONFIG_FIRMWARE_INCLUDE_V2RAY=n/' configs/templates/K2P.config
+          sed -i 's/CONFIG_FIRMWARE_INCLUDE_XRAY=n/CONFIG_FIRMWARE_INCLUDE_XRAY=y/' configs/templates/K2P.config
+          fakeroot ./build_firmware_modify K2P
+          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p_xray.trx
+      - name: Upload artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: build
+          path: /opt/bin
