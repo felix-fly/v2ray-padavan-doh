@@ -47,9 +47,7 @@ chmod +x /etc/storage/v2ray/*.sh
 **内部网络(LAN) -> DHCP服务器 -> 自定义配置文件 "dnsmasq.conf"**
 
 ```bash
-conf-file=/etc/storage/dnsmasq/gw.hosts
-addn-hosts=/etc/storage/dnsmasq/ad.hosts
-addn-hosts=/etc/storage/dnsmasq/ad-ext.hosts
+conf-dir=/etc/storage/dnsmasq, *.hosts
 ```
 
 ## dnsmasq配置（二选一：使用smartdns提供dns解析服务）
