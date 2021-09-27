@@ -38,7 +38,21 @@ chmod +x /etc/storage/xray/*.sh
 chmod +x /etc/storage/v2ray/*.sh
 ```
 
-## dnsmasq配置（配合smartdns提供dns解析服务）
+## dnsmasq配置（二选一：不使用smartdns）
+
+* 将 dnsmasq 文件夹里的所有文件上传至路由器 /etc/storage/dnsmasq 目录
+
+* 通过padavan管理界面修改，dnsmasq拦截广告并将gw域名转给v2ray进行解析。
+
+**内部网络(LAN) -> DHCP服务器 -> 自定义配置文件 "dnsmasq.conf"**
+
+```bash
+conf-file=/etc/storage/dnsmasq/gw.hosts
+addn-hosts=/etc/storage/dnsmasq/ad.hosts
+addn-hosts=/etc/storage/dnsmasq/ad-ext.hosts
+```
+
+## dnsmasq配置（二选一：使用smartdns提供dns解析服务）
 
 [**具体配置参考关于smartdns的描述**](./smartdns.md)
 
