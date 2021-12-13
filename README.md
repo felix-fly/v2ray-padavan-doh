@@ -50,6 +50,12 @@ chmod +x /etc/storage/v2ray/*.sh
 conf-dir=/etc/storage/dnsmasq, *.hosts
 ```
 
+**高级设置 -> 自定义设置 -> 脚本 -> 在防火墙规则启动后执行:**
+
+```bash
+/etc/storage/dnsmasq/iptables.sh
+```
+
 ## dnsmasq配置（二选一：使用smartdns提供dns解析服务）
 
 [**具体配置参考关于smartdns的描述**](./smartdns.md)
