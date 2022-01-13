@@ -46,6 +46,17 @@ chmod +x /etc/storage/v2ray/*.sh
 
 **内部网络(LAN) -> DHCP服务器 -> 自定义配置文件 "dnsmasq.conf"**
 
+下面两种配置方式，选择其中一种即可
+
+### 方式一：通过 gfwlist 和 addn-hosts 参数配置
+
+```bash
+addn-hosts=/etc/storage/dnsmasq/ad.list
+gfwlist=/etc/storage/dnsmasq/gw.list@127.0.0.1#1053^gw
+```
+
+### 方式二：加载自定义配置文件
+
 ```bash
 conf-dir=/etc/storage/dnsmasq, *.hosts
 ```

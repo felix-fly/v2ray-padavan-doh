@@ -20,6 +20,9 @@ jobs:
           cd /opt/rt-n56u/trunk
           wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/k2p.config -O configs/templates/K2P.config
 
+          # enlarge the dnsmasq cache size
+          sed -i 's/DNS_RELAY_CACHE_MAX\t\t1024/DNS_RELAY_CACHE_MAX\t\t10000/' user/rc/rc.h
+
           # enlarge the storage size
           # sed -i 's/CONFIG_MTD_STORE_PART_SIZ=0x80000/CONFIG_MTD_STORE_PART_SIZ=0x600000/' configs/boards/K2P/kernel-3.4.x.config
           # sed -i 's/mtd_part_size=65536/mtd_part_size=6291456/' user/scripts/mtd_storage.sh
