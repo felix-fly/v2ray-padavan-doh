@@ -50,12 +50,16 @@ chmod +x /etc/storage/v2ray/*.sh
 
 ### 方式一：通过 gfwlist 和 addn-hosts 参数配置
 
+这种方式通过 addn-hosts 方式屏蔽广告域名解析，测试下来有问题，直接 ping 域名会返回 0.0.0.0 但是通过 curl 或者浏览器访问域名会正常，此时再 ping 就会得到正确的地址，过一会再 ping 又回到 0.0.0.0 具体什么原因造成的目前还不清楚。如果你知道，请一定要告诉我。据说这种 addn-hosts 方式在加载大量域名时查询性能更好。
+
 ```bash
 addn-hosts=/etc/storage/dnsmasq/ad.list
 gfwlist=/etc/storage/dnsmasq/gw.list@127.0.0.1#1053^gw
 ```
 
 ### 方式二：加载自定义配置文件
+
+目前广告列表已经超过五万条了，dnsmasq 加载后查询效率已经有所下降，具体表现为 cpu 使用率较之前有升高。如果影响正常使用，可以不加载广告规则，或者选用下面 smartdns 的方案。
 
 ```bash
 conf-dir=/etc/storage/dnsmasq, *.hosts
