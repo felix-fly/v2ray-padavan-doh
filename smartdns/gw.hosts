@@ -44,6 +44,7 @@ nameserver /2-hand.info/gw
 nameserver /2000fun.com/gw
 nameserver /2008xianzhang.info/gw
 nameserver /2017.hk/gw
+nameserver /2021hkcharter.com/gw
 nameserver /2047.name/gw
 nameserver /21andy.com/gw
 nameserver /21join.com/gw
@@ -103,6 +104,7 @@ nameserver /6park.com/gw
 nameserver /6parkbbs.com/gw
 nameserver /6parker.com/gw
 nameserver /6parknews.com/gw
+nameserver /7-zip.org/gw
 nameserver /7capture.com/gw
 nameserver /7cow.com/gw
 nameserver /8-d.com/gw
@@ -114,6 +116,7 @@ nameserver /888.com/gw
 nameserver /888poker.com/gw
 nameserver /89-64.org/gw
 nameserver /89.64.charter.constitutionalism.solutions/gw
+nameserver /8964museum.com/gw
 nameserver /8news.com.tw/gw
 nameserver /8z1.net/gw
 nameserver /9001700.com/gw
@@ -126,6 +129,7 @@ nameserver /99btgc01.com/gw
 nameserver /99cn.info/gw
 nameserver /9bis.com/gw
 nameserver /9bis.net/gw
+nameserver /9cache.com/gw
 nameserver /9gag.com/gw
 nameserver /9news.com.au/gw
 nameserver /a-normal-day.com/gw
@@ -371,6 +375,7 @@ nameserver /asianews.it/gw
 nameserver /asiansexdiary.com/gw
 nameserver /asianspiss.com/gw
 nameserver /asianwomensfilm.de/gw
+nameserver /asiaone.com/gw
 nameserver /asiatgp.com/gw
 nameserver /asiatoday.us/gw
 nameserver /askstudent.com/gw
@@ -390,6 +395,7 @@ nameserver /atlanta168.com/gw
 nameserver /atlaspost.com/gw
 nameserver /atlassian.net/gw
 nameserver /atnext.com/gw
+nameserver /auctions.yahoo.co.jp/gw
 nameserver /auntology.fandom.com/gw
 nameserver /authorizeddns.net/gw
 nameserver /authorizeddns.org/gw
@@ -510,6 +516,7 @@ nameserver /beevpn.com/gw
 nameserver /behance.net/gw
 nameserver /behindkink.com/gw
 nameserver /beijing1989.com/gw
+nameserver /beijing2022.art/gw
 nameserver /beijingspring.com/gw
 nameserver /beijingzx.org/gw
 nameserver /belamionline.com/gw
@@ -563,6 +570,7 @@ nameserver /bit.do/gw
 nameserver /bit.ly/gw
 nameserver /bitbay.net/gw
 nameserver /bitc.bme.emory.edu/gw
+nameserver /bitchute.com/gw
 nameserver /bitcointalk.org/gw
 nameserver /bitcoinworld.com/gw
 nameserver /bitfinex.com/gw
@@ -586,6 +594,7 @@ nameserver /blinkx.com/gw
 nameserver /blinw.com/gw
 nameserver /blip.tv/gw
 nameserver /blockcn.com/gw
+nameserver /blockedbyhk.com/gw
 nameserver /blockless.com/gw
 nameserver /blog.calibre-ebook.com/gw
 nameserver /blog.cnyes.com/gw
@@ -701,6 +710,7 @@ nameserver /bloomberg.com/gw
 nameserver /bloomberg.de/gw
 nameserver /bloombergview.com/gw
 nameserver /bloomfortune.com/gw
+nameserver /blubrry.com/gw
 nameserver /blueangellive.com/gw
 nameserver /bmfinn.com/gw
 nameserver /bnews.co/gw
@@ -718,10 +728,12 @@ nameserver /bongacams.com/gw
 nameserver /boobstagram.com/gw
 nameserver /book.com.tw/gw
 nameserver /book.zi5.me/gw
+nameserver /bookdepository.com/gw
 nameserver /bookepub.com/gw
 nameserver /books.com.tw/gw
 nameserver /booktopia.com.au/gw
 nameserver /boomssr.com/gw
+nameserver /borgenmagazine.com/gw
 nameserver /bot.nu/gw
 nameserver /botanwang.com/gw
 nameserver /bowenpress.com/gw
@@ -743,6 +755,7 @@ nameserver /braumeister.org/gw
 nameserver /brave.com/gw
 nameserver /bravotube.net/gw
 nameserver /brazzers.com/gw
+nameserver /breached.to/gw
 nameserver /break.com/gw
 nameserver /breakgfw.com/gw
 nameserver /breaking911.com/gw
@@ -750,6 +763,7 @@ nameserver /breakingtweets.com/gw
 nameserver /breakwall.net/gw
 nameserver /briefdream.com/gw
 nameserver /briian.com/gw
+nameserver /brill.com/gw
 nameserver /brizzly.com/gw
 nameserver /brkmd.com/gw
 nameserver /broadbook.com/gw
@@ -779,6 +793,7 @@ nameserver /bullogger.com/gw
 nameserver /bunbunhk.com/gw
 nameserver /busayari.com/gw
 nameserver /business-humanrights.org/gw
+nameserver /business.page/gw
 nameserver /businessinsider.com/gw
 nameserver /businesstoday.com.tw/gw
 nameserver /businessweek.com/gw
@@ -795,8 +810,10 @@ nameserver /bwh1.net/gw
 nameserver /bwsj.hk/gw
 nameserver /bx.in.th/gw
 nameserver /bx.tl/gw
+nameserver /bybit.com/gw
 nameserver /bynet.co.il/gw
 nameserver /bypasscensorship.org/gw
+nameserver /byrut.org/gw
 nameserver /c-est-simple.com/gw
 nameserver /c-span.org/gw
 nameserver /c-spanvideo.org/gw
@@ -876,7 +893,6 @@ nameserver /cdcparty.com/gw
 nameserver /cdef.org/gw
 nameserver /cdig.info/gw
 nameserver /cdjp.org/gw
-nameserver /cdn-apple.com/gw
 nameserver /cdn-images.mailchimp.com/gw
 nameserver /cdn.assets.lfpcontent.com/gw
 nameserver /cdn.helixstudios.net/gw
@@ -1019,6 +1035,7 @@ nameserver /christusrex.org/gw
 nameserver /chrlawyers.hk/gw
 nameserver /chrome.com/gw
 nameserver /chromecast.com/gw
+nameserver /chromeenterprise.google/gw
 nameserver /chromeexperiments.com/gw
 nameserver /chromercise.com/gw
 nameserver /chromestatus.com/gw
@@ -1065,6 +1082,7 @@ nameserver /clinica-tibet.ru/gw
 nameserver /clipfish.de/gw
 nameserver /cloakpoint.com/gw
 nameserver /cloud.mail.ru/gw
+nameserver /cloudflare-ipfs.com/gw
 nameserver /cloudflare.com/gw
 nameserver /cloudfunctions.net/gw
 nameserver /club1069.com/gw
@@ -1115,7 +1133,9 @@ nameserver /coin2co.in/gw
 nameserver /coinbene.com/gw
 nameserver /coinegg.com/gw
 nameserver /coinex.com/gw
+nameserver /coingecko.com/gw
 nameserver /coingi.com/gw
+nameserver /coinmarketcap.com/gw
 nameserver /coinrail.co.kr/gw
 nameserver /cointiger.com/gw
 nameserver /cointobe.com/gw
@@ -1254,13 +1274,12 @@ nameserver /dalianmeng.org/gw
 nameserver /daliulian.org/gw
 nameserver /danbooru.donmai.us/gw
 nameserver /danke4china.net/gw
-nameserver /danwei.org/gw
 nameserver /daodu14.jigsy.com/gw
 nameserver /daolan.net/gw
-nameserver /daozhongxing.org/gw
 nameserver /darktech.org/gw
 nameserver /darktoy.net/gw
 nameserver /darpa.mil/gw
+nameserver /darrenliuwei.com/gw
 nameserver /dastrassi.org/gw
 nameserver /data-vocabulary.org/gw
 nameserver /data.flurry.com/gw
@@ -1319,7 +1338,6 @@ nameserver /dharamsalanet.com/gw
 nameserver /dharmakara.net/gw
 nameserver /dhcp.biz/gw
 nameserver /diaoyuislands.org/gw
-nameserver /dictionary.goo.ne.jp/gw
 nameserver /difangwenge.org/gw
 nameserver /digiland.tw/gw
 nameserver /digisfera.com/gw
@@ -1352,6 +1370,7 @@ nameserver /dlive.tv/gw
 nameserver /dlsite.com/gw
 nameserver /dlyoutube.com/gw
 nameserver /dm530.net/gw
+nameserver /dmc.nico/gw
 nameserver /dmcdn.net/gw
 nameserver /dmhy.org/gw
 nameserver /dmm.co.jp/gw
@@ -1519,7 +1538,6 @@ nameserver /elpais.com/gw
 nameserver /eltondisney.com/gw
 nameserver /emaga.com/gw
 nameserver /emanna.com/gw
-nameserver /embr.in/gw
 nameserver /emilylau.org.hk/gw
 nameserver /empfil.com/gw
 nameserver /emule-ed2k.com/gw
@@ -1682,6 +1700,7 @@ nameserver /fangong.forums-free.com/gw
 nameserver /fangong.org/gw
 nameserver /fangongheike.com/gw
 nameserver /fanhaodang.com/gw
+nameserver /fanhaolou.com/gw
 nameserver /fanqiang.network/gw
 nameserver /fanqiang.tk/gw
 nameserver /fanqiangdang.com/gw
@@ -1724,6 +1743,7 @@ nameserver /fdc64.org/gw
 nameserver /fdc89.jp/gw
 nameserver /fdcservers.net/gw
 nameserver /feedburner.com/gw
+nameserver /feeder.co/gw
 nameserver /feedly.com/gw
 nameserver /feeds.fileforum.com/gw
 nameserver /feedx.net/gw
@@ -1732,6 +1752,7 @@ nameserver /feer.com/gw
 nameserver /feifeiss.com/gw
 nameserver /feitian-california.org/gw
 nameserver /feitianacademy.org/gw
+nameserver /feixiaohao.com/gw
 nameserver /feministteacher.com/gw
 nameserver /fengzhenghu.com/gw
 nameserver /fengzhenghu.net/gw
@@ -1902,6 +1923,7 @@ nameserver /ftp1.biz/gw
 nameserver /ftpserver.biz/gw
 nameserver /ftv.com.tw/gw
 nameserver /ftvnews.com.tw/gw
+nameserver /ftx.com/gw
 nameserver /fucd.com/gw
 nameserver /fuckcnnic.net/gw
 nameserver /fuckgfw.org/gw
@@ -1974,6 +1996,7 @@ nameserver /gaywatch.com/gw
 nameserver /gazotube.com/gw
 nameserver /gcc.org.hk/gw
 nameserver /gclooney.com/gw
+nameserver /gclubs.com/gw
 nameserver /gcmasia.com/gw
 nameserver /gcpnews.com/gw
 nameserver /gcr.io/gw
@@ -2009,6 +2032,7 @@ nameserver /getmdl.io/gw
 nameserver /getoutline.org/gw
 nameserver /getsocialscope.com/gw
 nameserver /getsync.com/gw
+nameserver /gettr.com/gw
 nameserver /gettrials.com/gw
 nameserver /gettyimages.com/gw
 nameserver /getuploader.com/gw
@@ -2017,6 +2041,7 @@ nameserver /gfgold.com.hk/gw
 nameserver /gfsale.com/gw
 nameserver /gfw.org.ua/gw
 nameserver /gfw.press/gw
+nameserver /gfw.report/gw
 nameserver /ggpht.com/gw
 nameserver /ggssl.com/gw
 nameserver /ghidra-sre.org/gw
@@ -2027,7 +2052,6 @@ nameserver /gifree.com/gw
 nameserver /giga-web.jp/gw
 nameserver /gigporno.ru/gw
 nameserver /girlbanker.com/gw
-nameserver /gist.github.com/gw
 nameserver /git.io/gw
 nameserver /github.blog/gw
 nameserver /github.com/gw
@@ -2053,7 +2077,7 @@ nameserver /glorystar.me/gw
 nameserver /gluckman.com/gw
 nameserver /glype.com/gw
 nameserver /gmail.com/gw
-nameserver /gmbd.cn/gw
+nameserver /gmgard.com/gw
 nameserver /gmhz.org/gw
 nameserver /gmll.org/gw
 nameserver /gmodules.com/gw
@@ -2093,8 +2117,11 @@ nameserver /gongmeng.info/gw
 nameserver /gongminliliang.com/gw
 nameserver /gongwt.com/gw
 nameserver /goo.gl/gw
+nameserver /goo.gle/gw
+nameserver /goo.ne.jp/gw
 nameserver /gooday.xyz/gw
 nameserver /gooddns.info/gw
+nameserver /goodhope.school/gw
 nameserver /goodreaders.com/gw
 nameserver /goodreads.com/gw
 nameserver /goodtv.com.tw/gw
@@ -2346,6 +2373,7 @@ nameserver /grandtrial.org/gw
 nameserver /grangorz.org/gw
 nameserver /graphis.ne.jp/gw
 nameserver /graphql.org/gw
+nameserver /gravatar.com/gw
 nameserver /greasespot.net/gw
 nameserver /great-firewall.com/gw
 nameserver /great-roc.org/gw
@@ -2465,6 +2493,7 @@ nameserver /heungkongdiscuss.com/gw
 nameserver /hexieshe.com/gw
 nameserver /hexieshe.xyz/gw
 nameserver /hexxeh.net/gw
+nameserver /heyuedi.com/gw
 nameserver /heyzo.com/gw
 nameserver /hgseav.com/gw
 nameserver /hhdcb3office.org/gw
@@ -2564,6 +2593,7 @@ nameserver /hkusu.net/gw
 nameserver /hkvwet.com/gw
 nameserver /hkwcc.org.hk/gw
 nameserver /hkzone.org/gw
+nameserver /hmoegirl.com/gw
 nameserver /hmonghot.com/gw
 nameserver /hmv.co.jp/gw
 nameserver /hmvdigital.ca/gw
@@ -2591,6 +2621,7 @@ nameserver /hopedialogue.org/gw
 nameserver /hopto.org/gw
 nameserver /hornygamer.com/gw
 nameserver /hornytrip.com/gw
+nameserver /horrorporn.com/gw
 nameserver /hotair.com/gw
 nameserver /hotav.tv/gw
 nameserver /hotels.cn/gw
@@ -2838,6 +2869,7 @@ nameserver /istiqlalhewer.com/gw
 nameserver /istockphoto.com/gw
 nameserver /isunaffairs.com/gw
 nameserver /isuntv.com/gw
+nameserver /isupportuyghurs.org/gw
 nameserver /itaboo.info/gw
 nameserver /itaiwan.gov.tw/gw
 nameserver /italiatibet.org/gw
@@ -2858,11 +2890,13 @@ nameserver /ivpn.net/gw
 nameserver /ixquick.com/gw
 nameserver /ixxx.com/gw
 nameserver /iyouport.com/gw
+nameserver /iyouport.org/gw
 nameserver /izaobao.us/gw
 nameserver /izles.net/gw
 nameserver /izlesem.org/gw
 nameserver /j.mp/gw
 nameserver /ja.wikipedia.org/gw
+nameserver /jable.tv/gw
 nameserver /jamaat.org/gw
 nameserver /jamestown.org/gw
 nameserver /jamyangnorbu.com/gw
@@ -2930,6 +2964,7 @@ nameserver /jobnewera.wordpress.com/gw
 nameserver /jobso.tv/gw
 nameserver /joinclubhouse.com/gw
 nameserver /joinmastodon.org/gw
+nameserver /jornaldacidadeonline.com.br/gw
 nameserver /journalchretien.net/gw
 nameserver /journalofdemocracy.org/gw
 nameserver /joymiihub.com/gw
@@ -2938,6 +2973,7 @@ nameserver /jp.hao123.com/gw
 nameserver /jpl.nasa.gov/gw
 nameserver /jpopforum.net/gw
 nameserver /jquery.com/gw
+nameserver /jsdelivr.net/gw
 nameserver /jtvnw.net/gw
 nameserver /jubushoushen.com/gw
 nameserver /juhuaren.com/gw
@@ -3039,6 +3075,7 @@ nameserver /kspcoin.com/gw
 nameserver /ktzhk.com/gw
 nameserver /kucoin.com/gw
 nameserver /kui.name/gw
+nameserver /kukuku.uk/gw
 nameserver /kun.im/gw
 nameserver /kurashsultan.com/gw
 nameserver /kurtmunger.com/gw
@@ -3133,12 +3170,14 @@ nameserver /linear-abematv.akamaized.net/gw
 nameserver /linglingfa.com/gw
 nameserver /lingvodics.com/gw
 nameserver /link-o-rama.com/gw
+nameserver /linkedin.com/gw
 nameserver /linkideo.com/gw
 nameserver /linkuswell.com/gw
 nameserver /linux.org.hk/gw
 nameserver /linuxtoy.org/gw
 nameserver /lionsroar.com/gw
 nameserver /lipuman.com/gw
+nameserver /liquiditytp.com/gw
 nameserver /liquidvpn.com/gw
 nameserver /listennotes.com/gw
 nameserver /listentoyoutube.com/gw
@@ -3240,6 +3279,7 @@ nameserver /makzhou.warehouse333.com/gw
 nameserver /malaysiakini.com/gw
 nameserver /mamingzhe.com/gw
 nameserver /manchukuo.net/gw
+nameserver /mandiant.com/gw
 nameserver /mangafox.com/gw
 nameserver /mangafox.me/gw
 nameserver /maniash.com/gw
@@ -3304,7 +3344,8 @@ nameserver /megaproxy.com/gw
 nameserver /megarotic.com/gw
 nameserver /megavideo.com/gw
 nameserver /megurineluka.com/gw
-nameserver /meirixiaochao.com/gw
+nameserver /meizhong.blog/gw
+nameserver /meizhong.report/gw
 nameserver /meltoday.com/gw
 nameserver /meme.yahoo.com/gw
 nameserver /memehk.com/gw
@@ -3328,6 +3369,7 @@ nameserver /metafilter.com/gw
 nameserver /metart.com/gw
 nameserver /metarthunter.com/gw
 nameserver /meteorshowersonline.com/gw
+nameserver /metro.taipei/gw
 nameserver /metrohk.com.hk/gw
 nameserver /metrolife.ca/gw
 nameserver /metroradio.com.hk/gw
@@ -3410,6 +3452,7 @@ nameserver /mobile01.com/gw
 nameserver /mobileways.de/gw
 nameserver /moby.to/gw
 nameserver /mobypicture.com/gw
+nameserver /mod.io/gw
 nameserver /modernchinastudies.org/gw
 nameserver /moeaic.gov.tw/gw
 nameserver /moeerolibrary.com/gw
@@ -3429,6 +3472,7 @@ nameserver /moneyhome.biz/gw
 nameserver /monitorchina.org/gw
 nameserver /monster.com/gw
 nameserver /moodyz.com/gw
+nameserver /moon.fm/gw
 nameserver /moonbbs.com/gw
 nameserver /moonbingo.com/gw
 nameserver /moptt.tw/gw
@@ -3520,6 +3564,7 @@ nameserver /mynetav.org/gw
 nameserver /mynumber.org/gw
 nameserver /myparagliding.com/gw
 nameserver /mypicture.info/gw
+nameserver /mypikpak.com/gw
 nameserver /mypop3.net/gw
 nameserver /mypop3.org/gw
 nameserver /mypopescu.com/gw
@@ -3537,6 +3582,7 @@ nameserver /mywww.biz/gw
 nameserver /myz.info/gw
 nameserver /naacoalition.org/gw
 nameserver /naitik.net/gw
+nameserver /nakedsecurity.sophos.com/gw
 nameserver /nakido.com/gw
 nameserver /nakuz.com/gw
 nameserver /nalandabodhi.org/gw
@@ -3584,6 +3630,7 @@ nameserver /netflav.com/gw
 nameserver /netflix.com/gw
 nameserver /netflix.net/gw
 nameserver /netme.cc/gw
+nameserver /netsarang.com/gw
 nameserver /netsneak.com/gw
 nameserver /network54.com/gw
 nameserver /networkedblogs.com/gw
@@ -3621,10 +3668,12 @@ nameserver /newschinacomment.org/gw
 nameserver /newscn.org/gw
 nameserver /newsdetox.ca/gw
 nameserver /newsdh.com/gw
+nameserver /newsmax.com/gw
 nameserver /newspeak.cc/gw
 nameserver /newstamago.com/gw
 nameserver /newstapa.org/gw
 nameserver /newstarnet.com/gw
+nameserver /newstatesman.com/gw
 nameserver /newsweek.com/gw
 nameserver /newtaiwan.com.tw/gw
 nameserver /newtalk.tw/gw
@@ -3632,6 +3681,7 @@ nameserver /newyorker.com/gw
 nameserver /newyorktimes.com/gw
 nameserver /nexon.com/gw
 nameserver /next11.co.jp/gw
+nameserver /nextdigital.com.hk/gw
 nameserver /nextmag.com.tw/gw
 nameserver /nextmedia.com/gw
 nameserver /nexton-net.jp/gw
@@ -3645,6 +3695,7 @@ nameserver /nflxso.net/gw
 nameserver /nflxvideo.net/gw
 nameserver /nga.mil/gw
 nameserver /ngensis.com/gw
+nameserver /ngodupdongchung.com/gw
 nameserver /nhentai.net/gw
 nameserver /nhi.gov.tw/gw
 nameserver /nhk-ondemand.jp/gw
@@ -3683,6 +3734,7 @@ nameserver /nordstrom.com/gw
 nameserver /nordstromimage.com/gw
 nameserver /nordstromrack.com/gw
 nameserver /nordvpn.com/gw
+nameserver /notepad-plus-plus.org/gw
 nameserver /notify.dropboxapi.com/gw
 nameserver /nottinghampost.com/gw
 nameserver /novelasia.com/gw
@@ -3757,6 +3809,7 @@ nameserver /nytimg.com/gw
 nameserver /nytstyle.com/gw
 nameserver /nzchinese.com/gw
 nameserver /nzchinese.net.nz/gw
+nameserver /oanda.com/gw
 nameserver /observechina.net/gw
 nameserver /obutu.com/gw
 nameserver /ocaspro.com/gw
@@ -3768,6 +3821,7 @@ nameserver /ocsp.int-x3.letsencrypt.org/gw
 nameserver /october-review.org/gw
 nameserver /oculus.com/gw
 nameserver /oculuscdn.com/gw
+nameserver /odysee.com/gw
 nameserver /oex.com/gw
 nameserver /offbeatchina.com/gw
 nameserver /office.com/gw
@@ -3783,11 +3837,14 @@ nameserver /ok.ru/gw
 nameserver /okayfreedom.com/gw
 nameserver /okex.com/gw
 nameserver /okk.tw/gw
+nameserver /okx.com/gw
 nameserver /old-cat.net/gw
 nameserver /old.honeynet.org/gw
 nameserver /old.nabble.com/gw
+nameserver /olevod.com/gw
 nameserver /olumpo.com/gw
 nameserver /olympicwatch.org/gw
+nameserver /omct.org/gw
 nameserver /omgili.com/gw
 nameserver /omni7.jp/gw
 nameserver /omnitalk.com/gw
@@ -3801,6 +3858,7 @@ nameserver /onedrive.live.com/gw
 nameserver /onedumb.com/gw
 nameserver /onejav.com/gw
 nameserver /onion.city/gw
+nameserver /onion.ly/gw
 nameserver /online.recoveryversion.org/gw
 nameserver /onlinecha.com/gw
 nameserver /onlineyoutube.com/gw
@@ -3823,6 +3881,7 @@ nameserver /opendn.xyz/gw
 nameserver /openervpn.in/gw
 nameserver /openid.net/gw
 nameserver /openleaks.org/gw
+nameserver /opensea.io/gw
 nameserver /opensource.google/gw
 nameserver /opentech.fund/gw
 nameserver /openvpn.net/gw
@@ -3838,6 +3897,7 @@ nameserver /organharvestinvestigation.net/gw
 nameserver /organiccrap.com/gw
 nameserver /orgasm.com/gw
 nameserver /orgfree.com/gw
+nameserver /oricon.co.jp/gw
 nameserver /orient-doll.com/gw
 nameserver /orientaldaily.com.my/gw
 nameserver /orn.jp/gw
@@ -3854,6 +3914,7 @@ nameserver /oursogo.com/gw
 nameserver /oursteps.com.au/gw
 nameserver /oursweb.net/gw
 nameserver /ourtv.hk/gw
+nameserver /overcast.fm/gw
 nameserver /overdaily.org/gw
 nameserver /overplay.net/gw
 nameserver /oversea.istarshine.com/gw
@@ -3877,6 +3938,7 @@ nameserver /padmanet.com/gw
 nameserver /page.bid.yahoo.com/gw
 nameserver /page.link/gw
 nameserver /page2rss.com/gw
+nameserver /pages.dev/gw
 nameserver /pagodabox.com/gw
 nameserver /palacemoon.com/gw
 nameserver /paldengyal.com/gw
@@ -4016,6 +4078,7 @@ nameserver /pmates.com/gw
 nameserver /po2b.com/gw
 nameserver /pobieramy.top/gw
 nameserver /podbean.com/gw
+nameserver /podcast.co/gw
 nameserver /podictionary.com/gw
 nameserver /pokerstars.com/gw
 nameserver /pokerstars.net/gw
@@ -4025,8 +4088,10 @@ nameserver /politiscales.net/gw
 nameserver /poloniex.com/gw
 nameserver /polymer-project.org/gw
 nameserver /polymerhk.com/gw
+nameserver /poolin.com/gw
 nameserver /popo.tw/gw
 nameserver /popvote.hk/gw
+nameserver /popxi.click/gw
 nameserver /popyard.com/gw
 nameserver /popyard.org/gw
 nameserver /porn.com/gw
@@ -4079,6 +4144,7 @@ nameserver /privateinternetaccess.com/gw
 nameserver /privatepaste.com/gw
 nameserver /privatetunnel.com/gw
 nameserver /privatevpn.com/gw
+nameserver /privoxy.org/gw
 nameserver /procopytips.com/gw
 nameserver /project-syndicate.org/gw
 nameserver /prosiben.de/gw
@@ -4108,6 +4174,7 @@ nameserver /psiphontoday.com/gw
 nameserver /pt.im/gw
 nameserver /pts.org.tw/gw
 nameserver /ptt.cc/gw
+nameserver /pttgame.com/gw
 nameserver /pttvan.org/gw
 nameserver /pubu.com.tw/gw
 nameserver /puffinbrowser.com/gw
@@ -4130,6 +4197,7 @@ nameserver /putlocker.com/gw
 nameserver /putty.org/gw
 nameserver /puuko.com/gw
 nameserver /pwned.com/gw
+nameserver /pximg.net/gw
 nameserver /python.com/gw
 nameserver /python.com.tw/gw
 nameserver /pythonhackers.com/gw
@@ -4199,6 +4267,8 @@ nameserver /raremovie.cc/gw
 nameserver /raremovie.net/gw
 nameserver /raspberrypi.org/gw
 nameserver /rateyourmusic.com/gw
+nameserver /rationalwiki.org/gw
+nameserver /raw.githack.com/gw
 nameserver /raw.githubusercontent.com/gw
 nameserver /rawgit.com/gw
 nameserver /rawgithub.com/gw
@@ -4240,10 +4310,13 @@ nameserver /reflectivecode.com/gw
 nameserver /registry.google/gw
 nameserver /relaxbbs.com/gw
 nameserver /relay.com.tw/gw
+nameserver /relay.firefox.com/gw
 nameserver /releaseinternational.org/gw
+nameserver /religionnews.com/gw
 nameserver /religioustolerance.org/gw
 nameserver /renminbao.com/gw
 nameserver /renyurenquan.org/gw
+nameserver /research.google/gw
 nameserver /research.jmsc.hku.hk/gw
 nameserver /resilio.com/gw
 nameserver /resistchina.org/gw
@@ -4307,7 +4380,9 @@ nameserver /rukor.org/gw
 nameserver /rule34.xxx/gw
 nameserver /runbtx.com/gw
 nameserver /rushbee.com/gw
+nameserver /rusvpn.com/gw
 nameserver /ruten.com.tw/gw
+nameserver /rutracker.net/gw
 nameserver /rutube.ru/gw
 nameserver /ruyiseek.com/gw
 nameserver /rxhj.net/gw
@@ -4325,6 +4400,8 @@ nameserver /sacks.com/gw
 nameserver /sacom.hk/gw
 nameserver /sadistic-v.com/gw
 nameserver /sadpanda.us/gw
+nameserver /safechat.com/gw
+nameserver /safeguarddefenders.com/gw
 nameserver /safervpn.com/gw
 nameserver /safety.google/gw
 nameserver /saintyculture.com/gw
@@ -4393,6 +4470,7 @@ nameserver /sejie.com/gw
 nameserver /sellclassics.com/gw
 nameserver /sendsmtp.com/gw
 nameserver /sendspace.com/gw
+nameserver /sensortower.com/gw
 nameserver /servehttp.com/gw
 nameserver /serveuser.com/gw
 nameserver /serveusers.com/gw
@@ -4430,6 +4508,7 @@ nameserver /shadowsocks.com/gw
 nameserver /shadowsocks.com.hk/gw
 nameserver /shadowsocks.org/gw
 nameserver /shadowsocks9.com/gw
+nameserver /shahit.biz/gw
 nameserver /shambalapost.com/gw
 nameserver /shambhalasun.com/gw
 nameserver /shangfang.org/gw
@@ -4573,9 +4652,11 @@ nameserver /sohcradio.com/gw
 nameserver /sohfrance.org/gw
 nameserver /sokamonline.com/gw
 nameserver /sokmil.com/gw
+nameserver /solana.com/gw
 nameserver /solarsystem.nasa.gov/gw
 nameserver /solidaritetibet.org/gw
 nameserver /solidfiles.com/gw
+nameserver /solv.finance/gw
 nameserver /somee.com/gw
 nameserver /songjianjun.com/gw
 nameserver /sonicbbs.cc/gw
@@ -4662,7 +4743,6 @@ nameserver /stat.gov.tw/gw
 nameserver /static-economist.com/gw
 nameserver /static.comico.tw/gw
 nameserver /static.shemalez.com/gw
-nameserver /static.techspot.com/gw
 nameserver /static01.nyt.com/gw
 nameserver /staticflickr.com/gw
 nameserver /statueofdemocracy.org/gw
@@ -4771,6 +4851,7 @@ nameserver /tagwalk.com/gw
 nameserver /tahr.org.tw/gw
 nameserver /taipei.gov.tw/gw
 nameserver /taipeisociety.org/gw
+nameserver /taipeitimes.com/gw
 nameserver /taiwan-sex.com/gw
 nameserver /taiwanbible.com/gw
 nameserver /taiwancon.com/gw
@@ -4836,6 +4917,7 @@ nameserver /teachparentstech.org/gw
 nameserver /teamamericany.com/gw
 nameserver /tech2.in.com/gw
 nameserver /technews.tw/gw
+nameserver /techspot.com/gw
 nameserver /techviz.net/gw
 nameserver /teck.in/gw
 nameserver /teco-hk.org/gw
@@ -4856,6 +4938,7 @@ nameserver /tellme.pw/gw
 nameserver /tenacy.com/gw
 nameserver /tensorflow.org/gw
 nameserver /tenzinpalmo.com/gw
+nameserver /terabox.com/gw
 nameserver /tew.org/gw
 nameserver /textnow.me/gw
 nameserver /tfhub.dev/gw
@@ -4877,6 +4960,7 @@ nameserver /theconversation.com/gw
 nameserver /thedalailamamovie.com/gw
 nameserver /thediplomat.com/gw
 nameserver /thedw.us/gw
+nameserver /theepochtimes.com/gw
 nameserver /thefacebook.com/gw
 nameserver /thefrontier.hk/gw
 nameserver /thegay.com/gw
@@ -4887,6 +4971,7 @@ nameserver /thehots.info/gw
 nameserver /thehousenews.com/gw
 nameserver /thehun.net/gw
 nameserver /theinitium.com/gw
+nameserver /themoviedb.org/gw
 nameserver /thenewslens.com/gw
 nameserver /thepiratebay.org/gw
 nameserver /theporndude.com/gw
@@ -4902,6 +4987,7 @@ nameserver /thetibetmuseum.org/gw
 nameserver /thetibetpost.com/gw
 nameserver /thetinhat.com/gw
 nameserver /thetrotskymovie.com/gw
+nameserver /thetvdb.com/gw
 nameserver /thevivekspot.com/gw
 nameserver /thewgo.org/gw
 nameserver /theync.com/gw
@@ -4956,7 +5042,9 @@ nameserver /tibetanbuddhistinstitute.org/gw
 nameserver /tibetancommunity.org/gw
 nameserver /tibetancommunityuk.net/gw
 nameserver /tibetanculture.org/gw
+nameserver /tibetanentrepreneurs.org/gw
 nameserver /tibetanfeministcollective.org/gw
+nameserver /tibetanhealth.org/gw
 nameserver /tibetanjournal.com/gw
 nameserver /tibetanlanguage.org/gw
 nameserver /tibetanliberation.org/gw
@@ -5009,6 +5097,7 @@ nameserver /tibettimes.net/gw
 nameserver /tibetwrites.org/gw
 nameserver /ticket.com.tw/gw
 nameserver /tigervpn.com/gw
+nameserver /tiktok.com/gw
 nameserver /tiltbrush.com/gw
 nameserver /timdir.com/gw
 nameserver /time.com/gw
@@ -5023,6 +5112,7 @@ nameserver /tintuc101.com/gw
 nameserver /tiny.cc/gw
 nameserver /tinychat.com/gw
 nameserver /tinypaste.com/gw
+nameserver /tipas.net/gw
 nameserver /tipo.gov.tw/gw
 nameserver /tistory.com/gw
 nameserver /tkcs-collins.com/gw
@@ -5066,7 +5156,9 @@ nameserver /tor.updatestar.com/gw
 nameserver /tora.to/gw
 nameserver /torcn.com/gw
 nameserver /torguard.net/gw
+nameserver /torlock.com/gw
 nameserver /torproject.org/gw
+nameserver /torrentkitty.tv/gw
 nameserver /torrentprivacy.com/gw
 nameserver /torrentproject.se/gw
 nameserver /torrenty.org/gw
@@ -5082,8 +5174,10 @@ nameserver /toytractorshow.com/gw
 nameserver /tparents.org/gw
 nameserver /tpi.org.tw/gw
 nameserver /tracfone.com/gw
-nameserver /traffichaus.com/gw
+nameserver /tradingview.com/gw
 nameserver /trans.wenweipo.com/gw
+nameserver /translate.goog/gw
+nameserver /translate.google/gw
 nameserver /transparency.org/gw
 nameserver /treemall.com.tw/gw
 nameserver /trendsmap.com/gw
@@ -5091,6 +5185,7 @@ nameserver /trialofccp.org/gw
 nameserver /trickip.net/gw
 nameserver /trickip.org/gw
 nameserver /trimondi.de/gw
+nameserver /tronscan.org/gw
 nameserver /trouw.nl/gw
 nameserver /trt.net.tr/gw
 nameserver /trtc.com.tw/gw
@@ -5098,6 +5193,7 @@ nameserver /truebuddha-md.org/gw
 nameserver /trulyergonomic.com/gw
 nameserver /truth101.co.tv/gw
 nameserver /truthontour.org/gw
+nameserver /truthsocial.com/gw
 nameserver /truveo.com/gw
 nameserver /tryheart.jp/gw
 nameserver /tsctv.net/gw
@@ -5131,6 +5227,7 @@ nameserver /tumutanzi.com/gw
 nameserver /tumview.com/gw
 nameserver /tunein.com/gw
 nameserver /tunnelbear.com/gw
+nameserver /tunnelblick.net/gw
 nameserver /tunnelr.com/gw
 nameserver /tunsafe.com/gw
 nameserver /turansam.org/gw
@@ -5143,6 +5240,7 @@ nameserver /tushycash.com/gw
 nameserver /tuvpn.com/gw
 nameserver /tuzaijidi.com/gw
 nameserver /tv.com/gw
+nameserver /tv.google/gw
 nameserver /tv.jtbc.joins.com/gw
 nameserver /tvants.com/gw
 nameserver /tvboxnow.com/gw
@@ -5269,6 +5367,7 @@ nameserver /twyac.org/gw
 nameserver /txxx.com/gw
 nameserver /tycool.com/gw
 nameserver /typepad.com/gw
+nameserver /typora.io/gw
 nameserver /u15.info/gw
 nameserver /u9un.com/gw
 nameserver /ub0.cc/gw
@@ -5319,6 +5418,7 @@ nameserver /unknownspace.org/gw
 nameserver /unodedos.com/gw
 nameserver /unpo.org/gw
 nameserver /unseen.is/gw
+nameserver /unstable.icu/gw
 nameserver /untraceable.us/gw
 nameserver /uocn.org/gw
 nameserver /upcoming.yahoo.com/gw
@@ -5344,6 +5444,7 @@ nameserver /urlparser.com/gw
 nameserver /us.to/gw
 nameserver /usacn.com/gw
 nameserver /usaip.eu/gw
+nameserver /uscnpm.org/gw
 nameserver /userapi.nytlog.com/gw
 nameserver /users.skynet.be/gw
 nameserver /usfk.mil/gw
@@ -5356,7 +5457,6 @@ nameserver /usno.navy.mil/gw
 nameserver /usocctn.com/gw
 nameserver /ustibetcommittee.org/gw
 nameserver /ustream.tv/gw
-nameserver /usunitednews.com/gw
 nameserver /usus.cc/gw
 nameserver /utopianpal.com/gw
 nameserver /uu-gg.com/gw
@@ -5366,14 +5466,15 @@ nameserver /uwants.com/gw
 nameserver /uwants.net/gw
 nameserver /uyghur-j.org/gw
 nameserver /uyghur.co.uk/gw
+nameserver /uyghuraa.org/gw
 nameserver /uyghuramerican.org/gw
 nameserver /uyghurbiz.org/gw
-nameserver /uyghurcanadiansociety.org/gw
+nameserver /uyghurcanadian.ca/gw
 nameserver /uyghurcongress.org/gw
-nameserver /uyghurensemble.co.uk/gw
 nameserver /uyghurpen.org/gw
 nameserver /uyghurpress.com/gw
 nameserver /uyghurstudies.org/gw
+nameserver /uyghurtribunal.com/gw
 nameserver /uygur.fc2web.com/gw
 nameserver /uygur.org/gw
 nameserver /uymaarip.com/gw
@@ -5535,6 +5636,7 @@ nameserver /wahas.com/gw
 nameserver /waigaobu.com/gw
 nameserver /waikeung.org/gw
 nameserver /wailaike.net/gw
+nameserver /wainao.me/gw
 nameserver /waiwaier.com/gw
 nameserver /wallmama.com/gw
 nameserver /wallornot.org/gw
@@ -5567,6 +5669,7 @@ nameserver /waveprotocol.org/gw
 nameserver /waymo.com/gw
 nameserver /wda.gov.tw/gw
 nameserver /wdf5.com/gw
+nameserver /wealth.com.tw/gw
 nameserver /wearehairy.com/gw
 nameserver /wearn.com/gw
 nameserver /web.dev/gw
@@ -5627,6 +5730,7 @@ nameserver /wheelockslatin.com/gw
 nameserver /whereiswerner.com/gw
 nameserver /wheretowatch.com/gw
 nameserver /whippedass.com/gw
+nameserver /whispersystems.org/gw
 nameserver /whitebear.freebearblog.org/gw
 nameserver /whodns.xyz/gw
 nameserver /whoer.net/gw
@@ -5699,6 +5803,7 @@ nameserver /wordpress.com/gw
 nameserver /workatruna.com/gw
 nameserver /workerdemo.org.hk/gw
 nameserver /workerempowerment.org/gw
+nameserver /workers.dev/gw
 nameserver /workersthebig.net/gw
 nameserver /worldcat.org/gw
 nameserver /worldjournal.com/gw
@@ -5706,6 +5811,7 @@ nameserver /worldvpn.net/gw
 nameserver /wow-life.net/gw
 nameserver /wow.com/gw
 nameserver /wowgirls.com/gw
+nameserver /wowhead.com/gw
 nameserver /wowlegacy.ml/gw
 nameserver /wowporn.com/gw
 nameserver /wowrk.com/gw
@@ -5755,7 +5861,6 @@ nameserver /www.lamenhu.com/gw
 nameserver /www.lib.virginia.edu/gw
 nameserver /www.linksalpha.com/gw
 nameserver /www.m-sport.co.uk/gw
-nameserver /www.metro.taipei/gw
 nameserver /www.monlamit.org/gw
 nameserver /www.moztw.org/gw
 nameserver /www.nbc.com/gw
@@ -5784,6 +5889,7 @@ nameserver /wzyboy.im/gw
 nameserver /x-art.com/gw
 nameserver /x-berry.com/gw
 nameserver /x-wall.org/gw
+nameserver /x.co/gw
 nameserver /x.company/gw
 nameserver /x1949x.com/gw
 nameserver /x24hr.com/gw
@@ -5818,6 +5924,7 @@ nameserver /xihua.es/gw
 nameserver /xijie.wordpress.com/gw
 nameserver /xing.com/gw
 nameserver /xinhuanet.org/gw
+nameserver /xinjiangpolicefiles.org/gw
 nameserver /xinmiao.com.hk/gw
 nameserver /xinqimeng.over-blog.com/gw
 nameserver /xinsheng.net/gw
@@ -5836,6 +5943,7 @@ nameserver /xm.com/gw
 nameserver /xml-training-guide.com/gw
 nameserver /xmovies.com/gw
 nameserver /xn--4gq171p.com/gw
+nameserver /xn--9pr62r24a.com/gw
 nameserver /xn--czq75pvv1aj5c.org/gw
 nameserver /xn--i2ru8q2qg.com/gw
 nameserver /xn--ngstr-lra8j.com/gw
@@ -5875,6 +5983,7 @@ nameserver /xysblogs.org/gw
 nameserver /xyy69.com/gw
 nameserver /xyy69.info/gw
 nameserver /y2mate.com/gw
+nameserver /yadi.sk/gw
 nameserver /yahoo.com.hk/gw
 nameserver /yakbutterblues.com/gw
 nameserver /yam.com/gw
@@ -5962,6 +6071,7 @@ nameserver /yx51.net/gw
 nameserver /yyii.org/gw
 nameserver /yyjlymb.xyz/gw
 nameserver /yzzk.com/gw
+nameserver /z-lib.org/gw
 nameserver /zacebook.com/gw
 nameserver /zalmos.com/gw
 nameserver /zannel.com/gw
@@ -6094,6 +6204,7 @@ ipset /2-hand.info/gw
 ipset /2000fun.com/gw
 ipset /2008xianzhang.info/gw
 ipset /2017.hk/gw
+ipset /2021hkcharter.com/gw
 ipset /2047.name/gw
 ipset /21andy.com/gw
 ipset /21join.com/gw
@@ -6153,6 +6264,7 @@ ipset /6park.com/gw
 ipset /6parkbbs.com/gw
 ipset /6parker.com/gw
 ipset /6parknews.com/gw
+ipset /7-zip.org/gw
 ipset /7capture.com/gw
 ipset /7cow.com/gw
 ipset /8-d.com/gw
@@ -6164,6 +6276,7 @@ ipset /888.com/gw
 ipset /888poker.com/gw
 ipset /89-64.org/gw
 ipset /89.64.charter.constitutionalism.solutions/gw
+ipset /8964museum.com/gw
 ipset /8news.com.tw/gw
 ipset /8z1.net/gw
 ipset /9001700.com/gw
@@ -6176,6 +6289,7 @@ ipset /99btgc01.com/gw
 ipset /99cn.info/gw
 ipset /9bis.com/gw
 ipset /9bis.net/gw
+ipset /9cache.com/gw
 ipset /9gag.com/gw
 ipset /9news.com.au/gw
 ipset /a-normal-day.com/gw
@@ -6421,6 +6535,7 @@ ipset /asianews.it/gw
 ipset /asiansexdiary.com/gw
 ipset /asianspiss.com/gw
 ipset /asianwomensfilm.de/gw
+ipset /asiaone.com/gw
 ipset /asiatgp.com/gw
 ipset /asiatoday.us/gw
 ipset /askstudent.com/gw
@@ -6440,6 +6555,7 @@ ipset /atlanta168.com/gw
 ipset /atlaspost.com/gw
 ipset /atlassian.net/gw
 ipset /atnext.com/gw
+ipset /auctions.yahoo.co.jp/gw
 ipset /auntology.fandom.com/gw
 ipset /authorizeddns.net/gw
 ipset /authorizeddns.org/gw
@@ -6560,6 +6676,7 @@ ipset /beevpn.com/gw
 ipset /behance.net/gw
 ipset /behindkink.com/gw
 ipset /beijing1989.com/gw
+ipset /beijing2022.art/gw
 ipset /beijingspring.com/gw
 ipset /beijingzx.org/gw
 ipset /belamionline.com/gw
@@ -6613,6 +6730,7 @@ ipset /bit.do/gw
 ipset /bit.ly/gw
 ipset /bitbay.net/gw
 ipset /bitc.bme.emory.edu/gw
+ipset /bitchute.com/gw
 ipset /bitcointalk.org/gw
 ipset /bitcoinworld.com/gw
 ipset /bitfinex.com/gw
@@ -6636,6 +6754,7 @@ ipset /blinkx.com/gw
 ipset /blinw.com/gw
 ipset /blip.tv/gw
 ipset /blockcn.com/gw
+ipset /blockedbyhk.com/gw
 ipset /blockless.com/gw
 ipset /blog.calibre-ebook.com/gw
 ipset /blog.cnyes.com/gw
@@ -6751,6 +6870,7 @@ ipset /bloomberg.com/gw
 ipset /bloomberg.de/gw
 ipset /bloombergview.com/gw
 ipset /bloomfortune.com/gw
+ipset /blubrry.com/gw
 ipset /blueangellive.com/gw
 ipset /bmfinn.com/gw
 ipset /bnews.co/gw
@@ -6768,10 +6888,12 @@ ipset /bongacams.com/gw
 ipset /boobstagram.com/gw
 ipset /book.com.tw/gw
 ipset /book.zi5.me/gw
+ipset /bookdepository.com/gw
 ipset /bookepub.com/gw
 ipset /books.com.tw/gw
 ipset /booktopia.com.au/gw
 ipset /boomssr.com/gw
+ipset /borgenmagazine.com/gw
 ipset /bot.nu/gw
 ipset /botanwang.com/gw
 ipset /bowenpress.com/gw
@@ -6793,6 +6915,7 @@ ipset /braumeister.org/gw
 ipset /brave.com/gw
 ipset /bravotube.net/gw
 ipset /brazzers.com/gw
+ipset /breached.to/gw
 ipset /break.com/gw
 ipset /breakgfw.com/gw
 ipset /breaking911.com/gw
@@ -6800,6 +6923,7 @@ ipset /breakingtweets.com/gw
 ipset /breakwall.net/gw
 ipset /briefdream.com/gw
 ipset /briian.com/gw
+ipset /brill.com/gw
 ipset /brizzly.com/gw
 ipset /brkmd.com/gw
 ipset /broadbook.com/gw
@@ -6829,6 +6953,7 @@ ipset /bullogger.com/gw
 ipset /bunbunhk.com/gw
 ipset /busayari.com/gw
 ipset /business-humanrights.org/gw
+ipset /business.page/gw
 ipset /businessinsider.com/gw
 ipset /businesstoday.com.tw/gw
 ipset /businessweek.com/gw
@@ -6845,8 +6970,10 @@ ipset /bwh1.net/gw
 ipset /bwsj.hk/gw
 ipset /bx.in.th/gw
 ipset /bx.tl/gw
+ipset /bybit.com/gw
 ipset /bynet.co.il/gw
 ipset /bypasscensorship.org/gw
+ipset /byrut.org/gw
 ipset /c-est-simple.com/gw
 ipset /c-span.org/gw
 ipset /c-spanvideo.org/gw
@@ -6926,7 +7053,6 @@ ipset /cdcparty.com/gw
 ipset /cdef.org/gw
 ipset /cdig.info/gw
 ipset /cdjp.org/gw
-ipset /cdn-apple.com/gw
 ipset /cdn-images.mailchimp.com/gw
 ipset /cdn.assets.lfpcontent.com/gw
 ipset /cdn.helixstudios.net/gw
@@ -7069,6 +7195,7 @@ ipset /christusrex.org/gw
 ipset /chrlawyers.hk/gw
 ipset /chrome.com/gw
 ipset /chromecast.com/gw
+ipset /chromeenterprise.google/gw
 ipset /chromeexperiments.com/gw
 ipset /chromercise.com/gw
 ipset /chromestatus.com/gw
@@ -7115,6 +7242,7 @@ ipset /clinica-tibet.ru/gw
 ipset /clipfish.de/gw
 ipset /cloakpoint.com/gw
 ipset /cloud.mail.ru/gw
+ipset /cloudflare-ipfs.com/gw
 ipset /cloudflare.com/gw
 ipset /cloudfunctions.net/gw
 ipset /club1069.com/gw
@@ -7165,7 +7293,9 @@ ipset /coin2co.in/gw
 ipset /coinbene.com/gw
 ipset /coinegg.com/gw
 ipset /coinex.com/gw
+ipset /coingecko.com/gw
 ipset /coingi.com/gw
+ipset /coinmarketcap.com/gw
 ipset /coinrail.co.kr/gw
 ipset /cointiger.com/gw
 ipset /cointobe.com/gw
@@ -7304,13 +7434,12 @@ ipset /dalianmeng.org/gw
 ipset /daliulian.org/gw
 ipset /danbooru.donmai.us/gw
 ipset /danke4china.net/gw
-ipset /danwei.org/gw
 ipset /daodu14.jigsy.com/gw
 ipset /daolan.net/gw
-ipset /daozhongxing.org/gw
 ipset /darktech.org/gw
 ipset /darktoy.net/gw
 ipset /darpa.mil/gw
+ipset /darrenliuwei.com/gw
 ipset /dastrassi.org/gw
 ipset /data-vocabulary.org/gw
 ipset /data.flurry.com/gw
@@ -7369,7 +7498,6 @@ ipset /dharamsalanet.com/gw
 ipset /dharmakara.net/gw
 ipset /dhcp.biz/gw
 ipset /diaoyuislands.org/gw
-ipset /dictionary.goo.ne.jp/gw
 ipset /difangwenge.org/gw
 ipset /digiland.tw/gw
 ipset /digisfera.com/gw
@@ -7402,6 +7530,7 @@ ipset /dlive.tv/gw
 ipset /dlsite.com/gw
 ipset /dlyoutube.com/gw
 ipset /dm530.net/gw
+ipset /dmc.nico/gw
 ipset /dmcdn.net/gw
 ipset /dmhy.org/gw
 ipset /dmm.co.jp/gw
@@ -7569,7 +7698,6 @@ ipset /elpais.com/gw
 ipset /eltondisney.com/gw
 ipset /emaga.com/gw
 ipset /emanna.com/gw
-ipset /embr.in/gw
 ipset /emilylau.org.hk/gw
 ipset /empfil.com/gw
 ipset /emule-ed2k.com/gw
@@ -7732,6 +7860,7 @@ ipset /fangong.forums-free.com/gw
 ipset /fangong.org/gw
 ipset /fangongheike.com/gw
 ipset /fanhaodang.com/gw
+ipset /fanhaolou.com/gw
 ipset /fanqiang.network/gw
 ipset /fanqiang.tk/gw
 ipset /fanqiangdang.com/gw
@@ -7774,6 +7903,7 @@ ipset /fdc64.org/gw
 ipset /fdc89.jp/gw
 ipset /fdcservers.net/gw
 ipset /feedburner.com/gw
+ipset /feeder.co/gw
 ipset /feedly.com/gw
 ipset /feeds.fileforum.com/gw
 ipset /feedx.net/gw
@@ -7782,6 +7912,7 @@ ipset /feer.com/gw
 ipset /feifeiss.com/gw
 ipset /feitian-california.org/gw
 ipset /feitianacademy.org/gw
+ipset /feixiaohao.com/gw
 ipset /feministteacher.com/gw
 ipset /fengzhenghu.com/gw
 ipset /fengzhenghu.net/gw
@@ -7952,6 +8083,7 @@ ipset /ftp1.biz/gw
 ipset /ftpserver.biz/gw
 ipset /ftv.com.tw/gw
 ipset /ftvnews.com.tw/gw
+ipset /ftx.com/gw
 ipset /fucd.com/gw
 ipset /fuckcnnic.net/gw
 ipset /fuckgfw.org/gw
@@ -8024,6 +8156,7 @@ ipset /gaywatch.com/gw
 ipset /gazotube.com/gw
 ipset /gcc.org.hk/gw
 ipset /gclooney.com/gw
+ipset /gclubs.com/gw
 ipset /gcmasia.com/gw
 ipset /gcpnews.com/gw
 ipset /gcr.io/gw
@@ -8059,6 +8192,7 @@ ipset /getmdl.io/gw
 ipset /getoutline.org/gw
 ipset /getsocialscope.com/gw
 ipset /getsync.com/gw
+ipset /gettr.com/gw
 ipset /gettrials.com/gw
 ipset /gettyimages.com/gw
 ipset /getuploader.com/gw
@@ -8067,6 +8201,7 @@ ipset /gfgold.com.hk/gw
 ipset /gfsale.com/gw
 ipset /gfw.org.ua/gw
 ipset /gfw.press/gw
+ipset /gfw.report/gw
 ipset /ggpht.com/gw
 ipset /ggssl.com/gw
 ipset /ghidra-sre.org/gw
@@ -8077,7 +8212,6 @@ ipset /gifree.com/gw
 ipset /giga-web.jp/gw
 ipset /gigporno.ru/gw
 ipset /girlbanker.com/gw
-ipset /gist.github.com/gw
 ipset /git.io/gw
 ipset /github.blog/gw
 ipset /github.com/gw
@@ -8103,7 +8237,7 @@ ipset /glorystar.me/gw
 ipset /gluckman.com/gw
 ipset /glype.com/gw
 ipset /gmail.com/gw
-ipset /gmbd.cn/gw
+ipset /gmgard.com/gw
 ipset /gmhz.org/gw
 ipset /gmll.org/gw
 ipset /gmodules.com/gw
@@ -8143,8 +8277,11 @@ ipset /gongmeng.info/gw
 ipset /gongminliliang.com/gw
 ipset /gongwt.com/gw
 ipset /goo.gl/gw
+ipset /goo.gle/gw
+ipset /goo.ne.jp/gw
 ipset /gooday.xyz/gw
 ipset /gooddns.info/gw
+ipset /goodhope.school/gw
 ipset /goodreaders.com/gw
 ipset /goodreads.com/gw
 ipset /goodtv.com.tw/gw
@@ -8396,6 +8533,7 @@ ipset /grandtrial.org/gw
 ipset /grangorz.org/gw
 ipset /graphis.ne.jp/gw
 ipset /graphql.org/gw
+ipset /gravatar.com/gw
 ipset /greasespot.net/gw
 ipset /great-firewall.com/gw
 ipset /great-roc.org/gw
@@ -8515,6 +8653,7 @@ ipset /heungkongdiscuss.com/gw
 ipset /hexieshe.com/gw
 ipset /hexieshe.xyz/gw
 ipset /hexxeh.net/gw
+ipset /heyuedi.com/gw
 ipset /heyzo.com/gw
 ipset /hgseav.com/gw
 ipset /hhdcb3office.org/gw
@@ -8614,6 +8753,7 @@ ipset /hkusu.net/gw
 ipset /hkvwet.com/gw
 ipset /hkwcc.org.hk/gw
 ipset /hkzone.org/gw
+ipset /hmoegirl.com/gw
 ipset /hmonghot.com/gw
 ipset /hmv.co.jp/gw
 ipset /hmvdigital.ca/gw
@@ -8641,6 +8781,7 @@ ipset /hopedialogue.org/gw
 ipset /hopto.org/gw
 ipset /hornygamer.com/gw
 ipset /hornytrip.com/gw
+ipset /horrorporn.com/gw
 ipset /hotair.com/gw
 ipset /hotav.tv/gw
 ipset /hotels.cn/gw
@@ -8888,6 +9029,7 @@ ipset /istiqlalhewer.com/gw
 ipset /istockphoto.com/gw
 ipset /isunaffairs.com/gw
 ipset /isuntv.com/gw
+ipset /isupportuyghurs.org/gw
 ipset /itaboo.info/gw
 ipset /itaiwan.gov.tw/gw
 ipset /italiatibet.org/gw
@@ -8908,11 +9050,13 @@ ipset /ivpn.net/gw
 ipset /ixquick.com/gw
 ipset /ixxx.com/gw
 ipset /iyouport.com/gw
+ipset /iyouport.org/gw
 ipset /izaobao.us/gw
 ipset /izles.net/gw
 ipset /izlesem.org/gw
 ipset /j.mp/gw
 ipset /ja.wikipedia.org/gw
+ipset /jable.tv/gw
 ipset /jamaat.org/gw
 ipset /jamestown.org/gw
 ipset /jamyangnorbu.com/gw
@@ -8980,6 +9124,7 @@ ipset /jobnewera.wordpress.com/gw
 ipset /jobso.tv/gw
 ipset /joinclubhouse.com/gw
 ipset /joinmastodon.org/gw
+ipset /jornaldacidadeonline.com.br/gw
 ipset /journalchretien.net/gw
 ipset /journalofdemocracy.org/gw
 ipset /joymiihub.com/gw
@@ -8988,6 +9133,7 @@ ipset /jp.hao123.com/gw
 ipset /jpl.nasa.gov/gw
 ipset /jpopforum.net/gw
 ipset /jquery.com/gw
+ipset /jsdelivr.net/gw
 ipset /jtvnw.net/gw
 ipset /jubushoushen.com/gw
 ipset /juhuaren.com/gw
@@ -9089,6 +9235,7 @@ ipset /kspcoin.com/gw
 ipset /ktzhk.com/gw
 ipset /kucoin.com/gw
 ipset /kui.name/gw
+ipset /kukuku.uk/gw
 ipset /kun.im/gw
 ipset /kurashsultan.com/gw
 ipset /kurtmunger.com/gw
@@ -9183,12 +9330,14 @@ ipset /linear-abematv.akamaized.net/gw
 ipset /linglingfa.com/gw
 ipset /lingvodics.com/gw
 ipset /link-o-rama.com/gw
+ipset /linkedin.com/gw
 ipset /linkideo.com/gw
 ipset /linkuswell.com/gw
 ipset /linux.org.hk/gw
 ipset /linuxtoy.org/gw
 ipset /lionsroar.com/gw
 ipset /lipuman.com/gw
+ipset /liquiditytp.com/gw
 ipset /liquidvpn.com/gw
 ipset /listennotes.com/gw
 ipset /listentoyoutube.com/gw
@@ -9290,6 +9439,7 @@ ipset /makzhou.warehouse333.com/gw
 ipset /malaysiakini.com/gw
 ipset /mamingzhe.com/gw
 ipset /manchukuo.net/gw
+ipset /mandiant.com/gw
 ipset /mangafox.com/gw
 ipset /mangafox.me/gw
 ipset /maniash.com/gw
@@ -9354,7 +9504,8 @@ ipset /megaproxy.com/gw
 ipset /megarotic.com/gw
 ipset /megavideo.com/gw
 ipset /megurineluka.com/gw
-ipset /meirixiaochao.com/gw
+ipset /meizhong.blog/gw
+ipset /meizhong.report/gw
 ipset /meltoday.com/gw
 ipset /meme.yahoo.com/gw
 ipset /memehk.com/gw
@@ -9378,6 +9529,7 @@ ipset /metafilter.com/gw
 ipset /metart.com/gw
 ipset /metarthunter.com/gw
 ipset /meteorshowersonline.com/gw
+ipset /metro.taipei/gw
 ipset /metrohk.com.hk/gw
 ipset /metrolife.ca/gw
 ipset /metroradio.com.hk/gw
@@ -9460,6 +9612,7 @@ ipset /mobile01.com/gw
 ipset /mobileways.de/gw
 ipset /moby.to/gw
 ipset /mobypicture.com/gw
+ipset /mod.io/gw
 ipset /modernchinastudies.org/gw
 ipset /moeaic.gov.tw/gw
 ipset /moeerolibrary.com/gw
@@ -9479,6 +9632,7 @@ ipset /moneyhome.biz/gw
 ipset /monitorchina.org/gw
 ipset /monster.com/gw
 ipset /moodyz.com/gw
+ipset /moon.fm/gw
 ipset /moonbbs.com/gw
 ipset /moonbingo.com/gw
 ipset /moptt.tw/gw
@@ -9570,6 +9724,7 @@ ipset /mynetav.org/gw
 ipset /mynumber.org/gw
 ipset /myparagliding.com/gw
 ipset /mypicture.info/gw
+ipset /mypikpak.com/gw
 ipset /mypop3.net/gw
 ipset /mypop3.org/gw
 ipset /mypopescu.com/gw
@@ -9587,6 +9742,7 @@ ipset /mywww.biz/gw
 ipset /myz.info/gw
 ipset /naacoalition.org/gw
 ipset /naitik.net/gw
+ipset /nakedsecurity.sophos.com/gw
 ipset /nakido.com/gw
 ipset /nakuz.com/gw
 ipset /nalandabodhi.org/gw
@@ -9634,6 +9790,7 @@ ipset /netflav.com/gw
 ipset /netflix.com/gw
 ipset /netflix.net/gw
 ipset /netme.cc/gw
+ipset /netsarang.com/gw
 ipset /netsneak.com/gw
 ipset /network54.com/gw
 ipset /networkedblogs.com/gw
@@ -9671,10 +9828,12 @@ ipset /newschinacomment.org/gw
 ipset /newscn.org/gw
 ipset /newsdetox.ca/gw
 ipset /newsdh.com/gw
+ipset /newsmax.com/gw
 ipset /newspeak.cc/gw
 ipset /newstamago.com/gw
 ipset /newstapa.org/gw
 ipset /newstarnet.com/gw
+ipset /newstatesman.com/gw
 ipset /newsweek.com/gw
 ipset /newtaiwan.com.tw/gw
 ipset /newtalk.tw/gw
@@ -9682,6 +9841,7 @@ ipset /newyorker.com/gw
 ipset /newyorktimes.com/gw
 ipset /nexon.com/gw
 ipset /next11.co.jp/gw
+ipset /nextdigital.com.hk/gw
 ipset /nextmag.com.tw/gw
 ipset /nextmedia.com/gw
 ipset /nexton-net.jp/gw
@@ -9695,6 +9855,7 @@ ipset /nflxso.net/gw
 ipset /nflxvideo.net/gw
 ipset /nga.mil/gw
 ipset /ngensis.com/gw
+ipset /ngodupdongchung.com/gw
 ipset /nhentai.net/gw
 ipset /nhi.gov.tw/gw
 ipset /nhk-ondemand.jp/gw
@@ -9733,6 +9894,7 @@ ipset /nordstrom.com/gw
 ipset /nordstromimage.com/gw
 ipset /nordstromrack.com/gw
 ipset /nordvpn.com/gw
+ipset /notepad-plus-plus.org/gw
 ipset /notify.dropboxapi.com/gw
 ipset /nottinghampost.com/gw
 ipset /novelasia.com/gw
@@ -9807,6 +9969,7 @@ ipset /nytimg.com/gw
 ipset /nytstyle.com/gw
 ipset /nzchinese.com/gw
 ipset /nzchinese.net.nz/gw
+ipset /oanda.com/gw
 ipset /observechina.net/gw
 ipset /obutu.com/gw
 ipset /ocaspro.com/gw
@@ -9818,6 +9981,7 @@ ipset /ocsp.int-x3.letsencrypt.org/gw
 ipset /october-review.org/gw
 ipset /oculus.com/gw
 ipset /oculuscdn.com/gw
+ipset /odysee.com/gw
 ipset /oex.com/gw
 ipset /offbeatchina.com/gw
 ipset /office.com/gw
@@ -9833,11 +9997,14 @@ ipset /ok.ru/gw
 ipset /okayfreedom.com/gw
 ipset /okex.com/gw
 ipset /okk.tw/gw
+ipset /okx.com/gw
 ipset /old-cat.net/gw
 ipset /old.honeynet.org/gw
 ipset /old.nabble.com/gw
+ipset /olevod.com/gw
 ipset /olumpo.com/gw
 ipset /olympicwatch.org/gw
+ipset /omct.org/gw
 ipset /omgili.com/gw
 ipset /omni7.jp/gw
 ipset /omnitalk.com/gw
@@ -9851,6 +10018,7 @@ ipset /onedrive.live.com/gw
 ipset /onedumb.com/gw
 ipset /onejav.com/gw
 ipset /onion.city/gw
+ipset /onion.ly/gw
 ipset /online.recoveryversion.org/gw
 ipset /onlinecha.com/gw
 ipset /onlineyoutube.com/gw
@@ -9873,6 +10041,7 @@ ipset /opendn.xyz/gw
 ipset /openervpn.in/gw
 ipset /openid.net/gw
 ipset /openleaks.org/gw
+ipset /opensea.io/gw
 ipset /opensource.google/gw
 ipset /opentech.fund/gw
 ipset /openvpn.net/gw
@@ -9888,6 +10057,7 @@ ipset /organharvestinvestigation.net/gw
 ipset /organiccrap.com/gw
 ipset /orgasm.com/gw
 ipset /orgfree.com/gw
+ipset /oricon.co.jp/gw
 ipset /orient-doll.com/gw
 ipset /orientaldaily.com.my/gw
 ipset /orn.jp/gw
@@ -9904,6 +10074,7 @@ ipset /oursogo.com/gw
 ipset /oursteps.com.au/gw
 ipset /oursweb.net/gw
 ipset /ourtv.hk/gw
+ipset /overcast.fm/gw
 ipset /overdaily.org/gw
 ipset /overplay.net/gw
 ipset /oversea.istarshine.com/gw
@@ -9927,6 +10098,7 @@ ipset /padmanet.com/gw
 ipset /page.bid.yahoo.com/gw
 ipset /page.link/gw
 ipset /page2rss.com/gw
+ipset /pages.dev/gw
 ipset /pagodabox.com/gw
 ipset /palacemoon.com/gw
 ipset /paldengyal.com/gw
@@ -10066,6 +10238,7 @@ ipset /pmates.com/gw
 ipset /po2b.com/gw
 ipset /pobieramy.top/gw
 ipset /podbean.com/gw
+ipset /podcast.co/gw
 ipset /podictionary.com/gw
 ipset /pokerstars.com/gw
 ipset /pokerstars.net/gw
@@ -10075,8 +10248,10 @@ ipset /politiscales.net/gw
 ipset /poloniex.com/gw
 ipset /polymer-project.org/gw
 ipset /polymerhk.com/gw
+ipset /poolin.com/gw
 ipset /popo.tw/gw
 ipset /popvote.hk/gw
+ipset /popxi.click/gw
 ipset /popyard.com/gw
 ipset /popyard.org/gw
 ipset /porn.com/gw
@@ -10129,6 +10304,7 @@ ipset /privateinternetaccess.com/gw
 ipset /privatepaste.com/gw
 ipset /privatetunnel.com/gw
 ipset /privatevpn.com/gw
+ipset /privoxy.org/gw
 ipset /procopytips.com/gw
 ipset /project-syndicate.org/gw
 ipset /prosiben.de/gw
@@ -10158,6 +10334,7 @@ ipset /psiphontoday.com/gw
 ipset /pt.im/gw
 ipset /pts.org.tw/gw
 ipset /ptt.cc/gw
+ipset /pttgame.com/gw
 ipset /pttvan.org/gw
 ipset /pubu.com.tw/gw
 ipset /puffinbrowser.com/gw
@@ -10180,6 +10357,7 @@ ipset /putlocker.com/gw
 ipset /putty.org/gw
 ipset /puuko.com/gw
 ipset /pwned.com/gw
+ipset /pximg.net/gw
 ipset /python.com/gw
 ipset /python.com.tw/gw
 ipset /pythonhackers.com/gw
@@ -10249,6 +10427,8 @@ ipset /raremovie.cc/gw
 ipset /raremovie.net/gw
 ipset /raspberrypi.org/gw
 ipset /rateyourmusic.com/gw
+ipset /rationalwiki.org/gw
+ipset /raw.githack.com/gw
 ipset /raw.githubusercontent.com/gw
 ipset /rawgit.com/gw
 ipset /rawgithub.com/gw
@@ -10290,10 +10470,13 @@ ipset /reflectivecode.com/gw
 ipset /registry.google/gw
 ipset /relaxbbs.com/gw
 ipset /relay.com.tw/gw
+ipset /relay.firefox.com/gw
 ipset /releaseinternational.org/gw
+ipset /religionnews.com/gw
 ipset /religioustolerance.org/gw
 ipset /renminbao.com/gw
 ipset /renyurenquan.org/gw
+ipset /research.google/gw
 ipset /research.jmsc.hku.hk/gw
 ipset /resilio.com/gw
 ipset /resistchina.org/gw
@@ -10357,7 +10540,9 @@ ipset /rukor.org/gw
 ipset /rule34.xxx/gw
 ipset /runbtx.com/gw
 ipset /rushbee.com/gw
+ipset /rusvpn.com/gw
 ipset /ruten.com.tw/gw
+ipset /rutracker.net/gw
 ipset /rutube.ru/gw
 ipset /ruyiseek.com/gw
 ipset /rxhj.net/gw
@@ -10375,6 +10560,8 @@ ipset /sacks.com/gw
 ipset /sacom.hk/gw
 ipset /sadistic-v.com/gw
 ipset /sadpanda.us/gw
+ipset /safechat.com/gw
+ipset /safeguarddefenders.com/gw
 ipset /safervpn.com/gw
 ipset /safety.google/gw
 ipset /saintyculture.com/gw
@@ -10443,6 +10630,7 @@ ipset /sejie.com/gw
 ipset /sellclassics.com/gw
 ipset /sendsmtp.com/gw
 ipset /sendspace.com/gw
+ipset /sensortower.com/gw
 ipset /servehttp.com/gw
 ipset /serveuser.com/gw
 ipset /serveusers.com/gw
@@ -10480,6 +10668,7 @@ ipset /shadowsocks.com/gw
 ipset /shadowsocks.com.hk/gw
 ipset /shadowsocks.org/gw
 ipset /shadowsocks9.com/gw
+ipset /shahit.biz/gw
 ipset /shambalapost.com/gw
 ipset /shambhalasun.com/gw
 ipset /shangfang.org/gw
@@ -10623,9 +10812,11 @@ ipset /sohcradio.com/gw
 ipset /sohfrance.org/gw
 ipset /sokamonline.com/gw
 ipset /sokmil.com/gw
+ipset /solana.com/gw
 ipset /solarsystem.nasa.gov/gw
 ipset /solidaritetibet.org/gw
 ipset /solidfiles.com/gw
+ipset /solv.finance/gw
 ipset /somee.com/gw
 ipset /songjianjun.com/gw
 ipset /sonicbbs.cc/gw
@@ -10712,7 +10903,6 @@ ipset /stat.gov.tw/gw
 ipset /static-economist.com/gw
 ipset /static.comico.tw/gw
 ipset /static.shemalez.com/gw
-ipset /static.techspot.com/gw
 ipset /static01.nyt.com/gw
 ipset /staticflickr.com/gw
 ipset /statueofdemocracy.org/gw
@@ -10821,6 +11011,7 @@ ipset /tagwalk.com/gw
 ipset /tahr.org.tw/gw
 ipset /taipei.gov.tw/gw
 ipset /taipeisociety.org/gw
+ipset /taipeitimes.com/gw
 ipset /taiwan-sex.com/gw
 ipset /taiwanbible.com/gw
 ipset /taiwancon.com/gw
@@ -10886,6 +11077,7 @@ ipset /teachparentstech.org/gw
 ipset /teamamericany.com/gw
 ipset /tech2.in.com/gw
 ipset /technews.tw/gw
+ipset /techspot.com/gw
 ipset /techviz.net/gw
 ipset /teck.in/gw
 ipset /teco-hk.org/gw
@@ -10906,6 +11098,7 @@ ipset /tellme.pw/gw
 ipset /tenacy.com/gw
 ipset /tensorflow.org/gw
 ipset /tenzinpalmo.com/gw
+ipset /terabox.com/gw
 ipset /tew.org/gw
 ipset /textnow.me/gw
 ipset /tfhub.dev/gw
@@ -10927,6 +11120,7 @@ ipset /theconversation.com/gw
 ipset /thedalailamamovie.com/gw
 ipset /thediplomat.com/gw
 ipset /thedw.us/gw
+ipset /theepochtimes.com/gw
 ipset /thefacebook.com/gw
 ipset /thefrontier.hk/gw
 ipset /thegay.com/gw
@@ -10937,6 +11131,7 @@ ipset /thehots.info/gw
 ipset /thehousenews.com/gw
 ipset /thehun.net/gw
 ipset /theinitium.com/gw
+ipset /themoviedb.org/gw
 ipset /thenewslens.com/gw
 ipset /thepiratebay.org/gw
 ipset /theporndude.com/gw
@@ -10952,6 +11147,7 @@ ipset /thetibetmuseum.org/gw
 ipset /thetibetpost.com/gw
 ipset /thetinhat.com/gw
 ipset /thetrotskymovie.com/gw
+ipset /thetvdb.com/gw
 ipset /thevivekspot.com/gw
 ipset /thewgo.org/gw
 ipset /theync.com/gw
@@ -11006,7 +11202,9 @@ ipset /tibetanbuddhistinstitute.org/gw
 ipset /tibetancommunity.org/gw
 ipset /tibetancommunityuk.net/gw
 ipset /tibetanculture.org/gw
+ipset /tibetanentrepreneurs.org/gw
 ipset /tibetanfeministcollective.org/gw
+ipset /tibetanhealth.org/gw
 ipset /tibetanjournal.com/gw
 ipset /tibetanlanguage.org/gw
 ipset /tibetanliberation.org/gw
@@ -11059,6 +11257,7 @@ ipset /tibettimes.net/gw
 ipset /tibetwrites.org/gw
 ipset /ticket.com.tw/gw
 ipset /tigervpn.com/gw
+ipset /tiktok.com/gw
 ipset /tiltbrush.com/gw
 ipset /timdir.com/gw
 ipset /time.com/gw
@@ -11073,6 +11272,7 @@ ipset /tintuc101.com/gw
 ipset /tiny.cc/gw
 ipset /tinychat.com/gw
 ipset /tinypaste.com/gw
+ipset /tipas.net/gw
 ipset /tipo.gov.tw/gw
 ipset /tistory.com/gw
 ipset /tkcs-collins.com/gw
@@ -11116,7 +11316,9 @@ ipset /tor.updatestar.com/gw
 ipset /tora.to/gw
 ipset /torcn.com/gw
 ipset /torguard.net/gw
+ipset /torlock.com/gw
 ipset /torproject.org/gw
+ipset /torrentkitty.tv/gw
 ipset /torrentprivacy.com/gw
 ipset /torrentproject.se/gw
 ipset /torrenty.org/gw
@@ -11132,8 +11334,10 @@ ipset /toytractorshow.com/gw
 ipset /tparents.org/gw
 ipset /tpi.org.tw/gw
 ipset /tracfone.com/gw
-ipset /traffichaus.com/gw
+ipset /tradingview.com/gw
 ipset /trans.wenweipo.com/gw
+ipset /translate.goog/gw
+ipset /translate.google/gw
 ipset /transparency.org/gw
 ipset /treemall.com.tw/gw
 ipset /trendsmap.com/gw
@@ -11141,6 +11345,7 @@ ipset /trialofccp.org/gw
 ipset /trickip.net/gw
 ipset /trickip.org/gw
 ipset /trimondi.de/gw
+ipset /tronscan.org/gw
 ipset /trouw.nl/gw
 ipset /trt.net.tr/gw
 ipset /trtc.com.tw/gw
@@ -11148,6 +11353,7 @@ ipset /truebuddha-md.org/gw
 ipset /trulyergonomic.com/gw
 ipset /truth101.co.tv/gw
 ipset /truthontour.org/gw
+ipset /truthsocial.com/gw
 ipset /truveo.com/gw
 ipset /tryheart.jp/gw
 ipset /tsctv.net/gw
@@ -11181,6 +11387,7 @@ ipset /tumutanzi.com/gw
 ipset /tumview.com/gw
 ipset /tunein.com/gw
 ipset /tunnelbear.com/gw
+ipset /tunnelblick.net/gw
 ipset /tunnelr.com/gw
 ipset /tunsafe.com/gw
 ipset /turansam.org/gw
@@ -11193,6 +11400,7 @@ ipset /tushycash.com/gw
 ipset /tuvpn.com/gw
 ipset /tuzaijidi.com/gw
 ipset /tv.com/gw
+ipset /tv.google/gw
 ipset /tv.jtbc.joins.com/gw
 ipset /tvants.com/gw
 ipset /tvboxnow.com/gw
@@ -11319,6 +11527,7 @@ ipset /twyac.org/gw
 ipset /txxx.com/gw
 ipset /tycool.com/gw
 ipset /typepad.com/gw
+ipset /typora.io/gw
 ipset /u15.info/gw
 ipset /u9un.com/gw
 ipset /ub0.cc/gw
@@ -11369,6 +11578,7 @@ ipset /unknownspace.org/gw
 ipset /unodedos.com/gw
 ipset /unpo.org/gw
 ipset /unseen.is/gw
+ipset /unstable.icu/gw
 ipset /untraceable.us/gw
 ipset /uocn.org/gw
 ipset /upcoming.yahoo.com/gw
@@ -11394,6 +11604,7 @@ ipset /urlparser.com/gw
 ipset /us.to/gw
 ipset /usacn.com/gw
 ipset /usaip.eu/gw
+ipset /uscnpm.org/gw
 ipset /userapi.nytlog.com/gw
 ipset /users.skynet.be/gw
 ipset /usfk.mil/gw
@@ -11406,7 +11617,6 @@ ipset /usno.navy.mil/gw
 ipset /usocctn.com/gw
 ipset /ustibetcommittee.org/gw
 ipset /ustream.tv/gw
-ipset /usunitednews.com/gw
 ipset /usus.cc/gw
 ipset /utopianpal.com/gw
 ipset /uu-gg.com/gw
@@ -11416,14 +11626,15 @@ ipset /uwants.com/gw
 ipset /uwants.net/gw
 ipset /uyghur-j.org/gw
 ipset /uyghur.co.uk/gw
+ipset /uyghuraa.org/gw
 ipset /uyghuramerican.org/gw
 ipset /uyghurbiz.org/gw
-ipset /uyghurcanadiansociety.org/gw
+ipset /uyghurcanadian.ca/gw
 ipset /uyghurcongress.org/gw
-ipset /uyghurensemble.co.uk/gw
 ipset /uyghurpen.org/gw
 ipset /uyghurpress.com/gw
 ipset /uyghurstudies.org/gw
+ipset /uyghurtribunal.com/gw
 ipset /uygur.fc2web.com/gw
 ipset /uygur.org/gw
 ipset /uymaarip.com/gw
@@ -11585,6 +11796,7 @@ ipset /wahas.com/gw
 ipset /waigaobu.com/gw
 ipset /waikeung.org/gw
 ipset /wailaike.net/gw
+ipset /wainao.me/gw
 ipset /waiwaier.com/gw
 ipset /wallmama.com/gw
 ipset /wallornot.org/gw
@@ -11617,6 +11829,7 @@ ipset /waveprotocol.org/gw
 ipset /waymo.com/gw
 ipset /wda.gov.tw/gw
 ipset /wdf5.com/gw
+ipset /wealth.com.tw/gw
 ipset /wearehairy.com/gw
 ipset /wearn.com/gw
 ipset /web.dev/gw
@@ -11677,6 +11890,7 @@ ipset /wheelockslatin.com/gw
 ipset /whereiswerner.com/gw
 ipset /wheretowatch.com/gw
 ipset /whippedass.com/gw
+ipset /whispersystems.org/gw
 ipset /whitebear.freebearblog.org/gw
 ipset /whodns.xyz/gw
 ipset /whoer.net/gw
@@ -11749,6 +11963,7 @@ ipset /wordpress.com/gw
 ipset /workatruna.com/gw
 ipset /workerdemo.org.hk/gw
 ipset /workerempowerment.org/gw
+ipset /workers.dev/gw
 ipset /workersthebig.net/gw
 ipset /worldcat.org/gw
 ipset /worldjournal.com/gw
@@ -11756,6 +11971,7 @@ ipset /worldvpn.net/gw
 ipset /wow-life.net/gw
 ipset /wow.com/gw
 ipset /wowgirls.com/gw
+ipset /wowhead.com/gw
 ipset /wowlegacy.ml/gw
 ipset /wowporn.com/gw
 ipset /wowrk.com/gw
@@ -11805,7 +12021,6 @@ ipset /www.lamenhu.com/gw
 ipset /www.lib.virginia.edu/gw
 ipset /www.linksalpha.com/gw
 ipset /www.m-sport.co.uk/gw
-ipset /www.metro.taipei/gw
 ipset /www.monlamit.org/gw
 ipset /www.moztw.org/gw
 ipset /www.nbc.com/gw
@@ -11834,6 +12049,7 @@ ipset /wzyboy.im/gw
 ipset /x-art.com/gw
 ipset /x-berry.com/gw
 ipset /x-wall.org/gw
+ipset /x.co/gw
 ipset /x.company/gw
 ipset /x1949x.com/gw
 ipset /x24hr.com/gw
@@ -11868,6 +12084,7 @@ ipset /xihua.es/gw
 ipset /xijie.wordpress.com/gw
 ipset /xing.com/gw
 ipset /xinhuanet.org/gw
+ipset /xinjiangpolicefiles.org/gw
 ipset /xinmiao.com.hk/gw
 ipset /xinqimeng.over-blog.com/gw
 ipset /xinsheng.net/gw
@@ -11886,6 +12103,7 @@ ipset /xm.com/gw
 ipset /xml-training-guide.com/gw
 ipset /xmovies.com/gw
 ipset /xn--4gq171p.com/gw
+ipset /xn--9pr62r24a.com/gw
 ipset /xn--czq75pvv1aj5c.org/gw
 ipset /xn--i2ru8q2qg.com/gw
 ipset /xn--ngstr-lra8j.com/gw
@@ -11925,6 +12143,7 @@ ipset /xysblogs.org/gw
 ipset /xyy69.com/gw
 ipset /xyy69.info/gw
 ipset /y2mate.com/gw
+ipset /yadi.sk/gw
 ipset /yahoo.com.hk/gw
 ipset /yakbutterblues.com/gw
 ipset /yam.com/gw
@@ -12012,6 +12231,7 @@ ipset /yx51.net/gw
 ipset /yyii.org/gw
 ipset /yyjlymb.xyz/gw
 ipset /yzzk.com/gw
+ipset /z-lib.org/gw
 ipset /zacebook.com/gw
 ipset /zalmos.com/gw
 ipset /zannel.com/gw
