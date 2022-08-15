@@ -1,0 +1,45 @@
+on:
+  push:
+    branches: 
+      - smartdns
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: init
+        run: |
+          sudo apt-get update
+          sudo apt-get -y install make upx
+      - name: build
+        run: |
+          git clone --depth=1 https://github.com/hanwckf/rt-n56u.git /tmp/rt-n56u
+          cd /tmp/rt-n56u/toolchain-mipsel
+          sh dl_toolchain.sh
+
+          # compile openssl
+          cd /tmp
+          wget https://github.com/openssl/openssl/archive/refs/tags/OpenSSL_1_1_1j.tar.gz
+          tar xvf OpenSSL_1_1_1j.tar.gz
+          cd /tmp/openssl-OpenSSL_1_1_1j
+          ./config no-asm shared enable-ecdsa --cross-compile-prefix=/tmp/rt-n56u/toolchain-mipsel/toolchain-3.4.x/bin/mipsel-linux-uclibc- --prefix=/tmp/openssl
+          sed -i 's/-pthread -m64/-pthread/g' Makefile
+          make && make install
+
+          # compile smartdns
+          git clone --depth=1 https://github.com/pymumu/smartdns.git /tmp/smartdns
+          cd /tmp/smartdns
+          chmod +x ./package/build-pkg.sh
+          env CFLAGS="-I/tmp/openssl/include" LDFLAGS="-L/tmp/openssl/lib" ./package/build-pkg.sh --platform linux --arch mipsel_24kc --cross-tool /tmp/rt-n56u/toolchain-mipsel/toolchain-3.4.x/bin/mipsel-linux-uclibc- --outputdir /tmp
+
+          # minimal
+          mkdir /tmp/out
+          tar xvf /tmp/smartdns.*.tar.gz --directory=/tmp/out
+          upx --best --lzma /tmp/out/smartdns/usr/sbin/smartdns
+          mkdir /opt/bin
+          mv /tmp/out/smartdns/usr/sbin/smartdns /opt/bin
+      - name: Upload artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: build
+          path: /opt/bin
