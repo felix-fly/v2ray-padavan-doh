@@ -22,11 +22,11 @@ jobs:
 
           # remove the dnsmasq cache size config
           sed -i 's/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/\/\/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/' user/rc/services_ex.c
-          # sed -i 's/DNS_RELAY_CACHE_MAX\t\t1024/DNS_RELAY_CACHE_MAX\t\t10000/' user/rc/rc.h
 
-          # enlarge the storage size
-          # sed -i 's/CONFIG_MTD_STORE_PART_SIZ=0x80000/CONFIG_MTD_STORE_PART_SIZ=0x600000/' configs/boards/JDC/kernel-3.4.x.config
-          # sed -i 's/mtd_part_size=65536/mtd_part_size=6291456/' user/scripts/mtd_storage.sh
+          # add jdc files
+          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/JDC.tar.gz
+          tar xzf JDC.tar.gz -C configs/boards
+          rm -rf JDC.tar.gz
 
           # build-in smartdns
           mkdir -p user/smartdns
