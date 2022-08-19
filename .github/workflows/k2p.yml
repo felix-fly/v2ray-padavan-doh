@@ -14,7 +14,7 @@ jobs:
       - name: build
         run: |
           mkdir /opt/bin
-          git clone --depth=1 https://github.com/hanwckf/rt-n56u.git /opt/rt-n56u
+          git clone --depth=1 https://github.com/felix-fly/padavan.git /opt/rt-n56u
           cd /opt/rt-n56u/toolchain-mipsel
           sh dl_toolchain.sh
           cd /opt/rt-n56u/trunk
@@ -29,6 +29,7 @@ jobs:
           # sed -i 's/mtd_part_size=65536/mtd_part_size=6291456/' user/scripts/mtd_storage.sh
 
           # build-in smartdns
+          rm -rf user/smartdns
           mkdir -p user/smartdns
           wget -P user/smartdns/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/smartdns/Makefile
           wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/user/Makefile -O user/Makefile
@@ -39,7 +40,7 @@ jobs:
           mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p_me.trx
 
           # With v2ray & tproxy for others
-          ./clear_tree
+          rm -rf user/v2ray
           mkdir -p user/v2ray
           wget -P user/v2ray/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/v2ray/Makefile
           sed -i '/module_smart_load("xt_set", NULL);/amodule_smart_load("xt_TPROXY", NULL);' user/rc/rc.c
@@ -48,7 +49,7 @@ jobs:
           mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p_v2ray.trx
 
           # Use xray instead of v2ray
-          ./clear_tree
+          rm -rf user/xray
           mkdir -p user/xray
           wget -P user/xray/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/xray/Makefile
           sed -i 's/CONFIG_FIRMWARE_INCLUDE_V2RAY=y/CONFIG_FIRMWARE_INCLUDE_V2RAY=n/' configs/templates/K2P.config
