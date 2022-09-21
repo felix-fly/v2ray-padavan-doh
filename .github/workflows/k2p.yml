@@ -39,7 +39,7 @@ jobs:
           sed -i 's/found_app_smartdns = 1/found_app_smartdns = 0/' user/httpd/web_ex.c
 
           # Basic for me
-          fakeroot ./build_firmware_modify K2P
+          fakeroot ./build_firmware_modify K2P-USB
           mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p_me.trx
 
           # With v2ray & tproxy for others
@@ -48,7 +48,7 @@ jobs:
           wget -P user/v2ray/ https://raw.githubusercontent.com/hu-min/v2ray-padavan-doh/master/padavan/v2ray/Makefile
           sed -i '/module_smart_load("xt_set", NULL);/amodule_smart_load("xt_TPROXY", NULL);' user/rc/rc.c
           sed -i 's/CONFIG_FIRMWARE_INCLUDE_V2RAY=n/CONFIG_FIRMWARE_INCLUDE_V2RAY=y/' configs/templates/K2P.config
-          fakeroot ./build_firmware_modify K2P
+          fakeroot ./build_firmware_modify K2P-USB
           mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p_v2ray.trx
 
           # Use xray instead of v2ray
@@ -57,12 +57,10 @@ jobs:
           wget -P user/xray/ https://raw.githubusercontent.com/hu-min/v2ray-padavan-doh/master/padavan/xray/Makefile
           sed -i 's/CONFIG_FIRMWARE_INCLUDE_V2RAY=y/CONFIG_FIRMWARE_INCLUDE_V2RAY=n/' configs/templates/K2P.config
           sed -i 's/CONFIG_FIRMWARE_INCLUDE_XRAY=n/CONFIG_FIRMWARE_INCLUDE_XRAY=y/' configs/templates/K2P.config
-          fakeroot ./build_firmware_modify K2P
+          fakeroot ./build_firmware_modify K2P-USB
           mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p_xray.trx
       - name: Upload artifact
-        uses: "marvinpinto/action-automatic-releases@latest"
+        uses: "actions/upload-artifact@master"
         with:
-          repo_token: "${{ secrets.UPLOAD_KEY }}"
-          prerelease: false
-          files: |
-            /opt/bin/*.trx
+          name: Upload artifact
+          path: /opt/bin
