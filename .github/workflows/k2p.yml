@@ -1,6 +1,8 @@
 on:
-  push:
-    branches: 
+  watch:
+    types: started
+  #push:
+    #branches: 
       - k2p
 
 jobs:
