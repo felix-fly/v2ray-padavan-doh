@@ -3,7 +3,7 @@ on:
     types: started
   #push:
     #branches: 
-      - k2p
+      #- k2p
 
 jobs:
   build:
