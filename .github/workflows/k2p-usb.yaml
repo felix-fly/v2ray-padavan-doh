@@ -22,13 +22,9 @@ jobs:
           sed -i 's/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/\/\/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/' user/rc/services_ex.c
 
           # enlarge the storage size
-          sed -i 's/CONFIG_MTD_STORE_PART_SIZ=0x200000/CONFIG_MTD_STORE_PART_SIZ=0xc00000/' configs/boards/K2P-USB/kernel-3.4.x.config
+          wget https://raw.githubusercontent.com/hu-min/v2ray-padavan-doh/master/kernel-3.4.x.config -O configs/boards/K2P-USB/kernel-3.4.x.config
           sed -i 's/mtd_part_size=65536/mtd_part_size=12582912/' user/scripts/mtd_storage.sh
           
-          # NFS
-          sed -i 's/mtd_part_size=65536/mtd_part_size=6291456/' trunk/configs/boards/K2P-USB/kernel-3.4.x.config
-          sed -i 's/CONFIG_NETWORK_FILESYSTEMS=y/# CONFIG_NETWORK_FILESYSTEMS is not set/g' configs/templates/K2P-USB.config
-
           # build-in smartdns
           rm -rf user/smartdns
           mkdir -p user/smartdns
