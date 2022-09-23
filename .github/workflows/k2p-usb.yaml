@@ -36,7 +36,7 @@ jobs:
           wget https://raw.githubusercontent.com/hanwckf/rt-n56u/master/trunk/user/www/n56u_ribbon_fixed/bootstrap/img/asus_logo.png  -O user/www/n56u_ribbon_fixed/bootstrap/img/asus_logo.png
 
           # k2p
-          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/k2p.config -O configs/templates/K2P-USB.config
+          wget https://raw.githubusercontent.com/hu-min/v2ray-padavan-doh/master/k2p.config -O configs/templates/K2P-USB.config
           fakeroot ./build_firmware_modify K2P-USB
           mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p-usb.trx
 
