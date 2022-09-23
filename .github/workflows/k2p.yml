@@ -1,9 +1,9 @@
 on:
-  watch:
-    types: started
-  #push:
-    #branches: 
-      #- k2p
+  #watch:
+    #types: started
+  push:
+    branches: 
+      - k2p
 
 jobs:
   build:
