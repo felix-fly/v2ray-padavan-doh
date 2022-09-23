@@ -38,10 +38,10 @@ jobs:
           # k2p
           wget https://raw.githubusercontent.com/hu-min/v2ray-padavan-doh/master/k2p.config -O configs/templates/K2P-USB.config
           fakeroot ./build_firmware_modify K2P-USB
-          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p-usb.trx
+          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/Firmware_k2p-usb.trx
 
       - name: Upload artifact
         uses: "actions/upload-artifact@master"
         with:
-          name: Upload artifact
+          name: Firmware_k2p-usb.zip
           path: /opt/bin
