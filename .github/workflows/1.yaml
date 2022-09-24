@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: init
-        run: |
+        run:
           sudo apt-get update
           sudo apt-get -y install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd fakeroot kmod cpio git python3-docutils gettext automake autopoint texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev libmpfr-dev libncurses5-dev libltdl-dev wget libc-dev-bin
           mkdir /opt/bin
