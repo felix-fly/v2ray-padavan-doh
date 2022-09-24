@@ -17,7 +17,7 @@ jobs:
           cd /opt/rt-n56u/toolchain-mipsel
           sh dl_toolchain.sh
           cd /opt/rt-n56u/trunk
-          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/k2p.config -O configs/templates/K2P.config
+	  wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/k2p.config -O configs/templates/K2P.config
 
           # remove the dnsmasq cache size config
           sed -i 's/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/\/\/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/' user/rc/services_ex.c
