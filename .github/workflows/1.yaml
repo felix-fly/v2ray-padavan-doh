@@ -17,12 +17,12 @@ jobs:
           cd /opt/rt-n56u/toolchain-mipsel
           sh dl_toolchain.sh
           cd /opt/rt-n56u/trunk
-          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/k2p.config -O configs/templates/K2P.config
+          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/k2p.config -O /opt/rt-n56u/trunk/configs/templates/K2P.config
 
           # remove the dnsmasq cache size config
           sed -i 's/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/\/\/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/' user/rc/services_ex.c
-          sed -i 's/CONFIG_MTD_STORE_PART_SIZ=0x80000/CONFIG_MTD_STORE_PART_SIZ=100000/' configs/boards/K2P/kernel-3.4.x-5.0.config
-          sed -i 's/mtd_part_size=65536/mtd_part_size=1048576/g' user/scripts/mtd_storage.sh
+          sed -i 's/CONFIG_MTD_STORE_PART_SIZ=0x80000/CONFIG_MTD_STORE_PART_SIZ=100000/' /opt/rt-n56u/trunk/configs/boards/K2P/kernel-3.4.x-5.0.config
+          sed -i 's/mtd_part_size=65536/mtd_part_size=1048576/g' /opt/rt-n56u/trunk/user/scripts/mtd_storage.sh
 
           # build-in smartdns
           mkdir -p user/smartdns
