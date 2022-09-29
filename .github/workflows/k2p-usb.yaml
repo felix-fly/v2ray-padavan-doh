@@ -24,6 +24,7 @@ jobs:
           # enlarge the storage size
           sed -i 's/CONFIG_MTD_STORE_PART_SIZ=0x200000/CONFIG_MTD_STORE_PART_SIZ=0xc00000/' configs/boards/K2P-USB/kernel-3.4.x.config
           sed -i 's/mtd_part_size=65536/mtd_part_size=12582912/' user/scripts/mtd_storage.sh
+          sed -i 's/size_etc="6M"/size_etc="12M"/g' user/scripts/dev_init.sh
           
           # build-in smartdns
           rm -rf user/smartdns
