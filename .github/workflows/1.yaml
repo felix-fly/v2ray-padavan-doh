@@ -23,6 +23,7 @@ jobs:
           sed -i 's/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/\/\/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/' user/rc/services_ex.c
           sed -i 's/CONFIG_MTD_STORE_PART_SIZ=0x80000/CONFIG_MTD_STORE_PART_SIZ=100000/' /opt/rt-n56u/trunk/configs/boards/K2P/kernel-3.4.x-5.0.config
           sed -i 's/mtd_part_size=65536/mtd_part_size=1048576/g' /opt/rt-n56u/trunk/user/scripts/mtd_storage.sh
+          sed -i 's/size_etc="6M"/size_etc="12M"/g' /opt/rt-n56u/trunk/user/scripts/dev_init.sh
 
           # build-in smartdns
           mkdir -p user/smartdns
