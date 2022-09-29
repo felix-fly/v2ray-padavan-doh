@@ -1,4 +1,6 @@
 on:
+  #watch:
+    #types: started
   push:
     branches: 
       - k2p
@@ -14,53 +16,51 @@ jobs:
       - name: build
         run: |
           mkdir /opt/bin
-          git clone --depth=1 https://github.com/felix-fly/padavan.git /opt/rt-n56u
+          git clone --depth=1 https://github.com/hu-min/padavan.git /opt/rt-n56u
           cd /opt/rt-n56u/toolchain-mipsel
           sh dl_toolchain.sh
           cd /opt/rt-n56u/trunk
-          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/k2p.config -O configs/templates/K2P.config
+          wget https://raw.githubusercontent.com/hu-min/v2ray-padavan-doh/master/k2p.config -O configs/templates/K2P-USB.config
 
           # remove the dnsmasq cache size config
           sed -i 's/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/\/\/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/' user/rc/services_ex.c
           # sed -i 's/DNS_RELAY_CACHE_MAX\t\t1024/DNS_RELAY_CACHE_MAX\t\t10000/' user/rc/rc.h
 
           # enlarge the storage size
-          # sed -i 's/CONFIG_MTD_STORE_PART_SIZ=0x80000/CONFIG_MTD_STORE_PART_SIZ=0x600000/' configs/boards/K2P/kernel-3.4.x.config
+          # sed -i 's/CONFIG_MTD_STORE_PART_SIZ=0x200000/CONFIG_MTD_STORE_PART_SIZ=0x600000/' configs/boards/K2P-USB/kernel-3.4.x.config
           # sed -i 's/mtd_part_size=65536/mtd_part_size=6291456/' user/scripts/mtd_storage.sh
 
           # build-in smartdns
           rm -rf user/smartdns
           mkdir -p user/smartdns
-          wget -P user/smartdns/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/smartdns/Makefile
+          wget -P user/smartdns/ https://raw.githubusercontent.com/hu-min/v2ray-padavan-doh/master/padavan/smartdns/Makefile
           sed -i '$a\export SSL_CERT_FILE=/usr/lib/cacert.pem' user/scripts/profile
           # remove ui
           sed -i 's/found_app_smartdns = 1/found_app_smartdns = 0/' user/httpd/web_ex.c
 
           # Basic for me
-          fakeroot ./build_firmware_modify K2P
-          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p_me.trx
+          fakeroot ./build_firmware_modify K2P-USB
+          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p-usb_me.trx
 
           # With v2ray & tproxy for others
           rm -rf user/v2ray
           mkdir -p user/v2ray
-          wget -P user/v2ray/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/v2ray/Makefile
+          wget -P user/v2ray/ https://raw.githubusercontent.com/hu-min/v2ray-padavan-doh/master/padavan/v2ray/Makefile
           sed -i '/module_smart_load("xt_set", NULL);/amodule_smart_load("xt_TPROXY", NULL);' user/rc/rc.c
-          sed -i 's/CONFIG_FIRMWARE_INCLUDE_V2RAY=n/CONFIG_FIRMWARE_INCLUDE_V2RAY=y/' configs/templates/K2P.config
-          fakeroot ./build_firmware_modify K2P
-          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p_v2ray.trx
+          sed -i 's/CONFIG_FIRMWARE_INCLUDE_V2RAY=n/CONFIG_FIRMWARE_INCLUDE_V2RAY=y/' configs/templates/K2P-USB.config
+          fakeroot ./build_firmware_modify K2P-USB
+          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p-usb_v2ray.trx
 
           # Use xray instead of v2ray
           rm -rf user/xray
           mkdir -p user/xray
-          wget -P user/xray/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/xray/Makefile
-          sed -i 's/CONFIG_FIRMWARE_INCLUDE_V2RAY=y/CONFIG_FIRMWARE_INCLUDE_V2RAY=n/' configs/templates/K2P.config
-          sed -i 's/CONFIG_FIRMWARE_INCLUDE_XRAY=n/CONFIG_FIRMWARE_INCLUDE_XRAY=y/' configs/templates/K2P.config
-          fakeroot ./build_firmware_modify K2P
-          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p_xray.trx
+          wget -P user/xray/ https://raw.githubusercontent.com/hu-min/v2ray-padavan-doh/master/padavan/xray/Makefile
+          sed -i 's/CONFIG_FIRMWARE_INCLUDE_V2RAY=y/CONFIG_FIRMWARE_INCLUDE_V2RAY=n/' configs/templates/K2P-USB.config
+          sed -i 's/CONFIG_FIRMWARE_INCLUDE_XRAY=n/CONFIG_FIRMWARE_INCLUDE_XRAY=y/' configs/templates/K2P-USB.config
+          fakeroot ./build_firmware_modify K2P-USB
+          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p-usb_xray.trx
       - name: Upload artifact
-        uses: "marvinpinto/action-automatic-releases@latest"
+        uses: "actions/upload-artifact@master"
         with:
-          repo_token: "${{ secrets.UPLOAD_KEY }}"
-          prerelease: false
-          files: |
-            /opt/bin/*.trx
+          name: Upload artifact
+          path: /opt/bin
