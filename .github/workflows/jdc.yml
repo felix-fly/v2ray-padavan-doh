@@ -14,8 +14,7 @@ jobs:
       - name: build
         run: |
           mkdir /opt/bin
-          #git clone --depth=1 https://github.com/felix-fly/padavan.git /opt/rt-n56u
-          git clone --depth=1 https://github.com/vb1980/Padavan-KVR.git /opt/rt-n56u
+          git clone --depth=1 https://github.com/felix-fly/padavan.git /opt/rt-n56u
           cd /opt/rt-n56u/toolchain-mipsel
           sh dl_toolchain.sh
           cd /opt/rt-n56u/trunk
@@ -42,7 +41,7 @@ jobs:
           wget -P user/xray/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/xray/Makefile
 
           # jdc
-          #wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/jdc.config -O configs/templates/JDC-1.config
+          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/jdc.config -O configs/templates/JDC-1.config
           fakeroot ./build_firmware_modify JDC-1
           mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/jdc.trx
       - name: Upload artifact
