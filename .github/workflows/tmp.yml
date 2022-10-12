@@ -44,7 +44,7 @@ jobs:
           mkdir -p user/xray
           wget -P user/xray/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/xray/Makefile
           # jdc
-          #wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/jdc.config -O configs/templates/JDC-1.config
+          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/jdc.config -O configs/templates/JDC-1.config
           fakeroot ./build_firmware_modify JDC-1
           mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/jdc.trx
       - name: Upload artifact
