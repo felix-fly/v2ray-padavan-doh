@@ -14,7 +14,8 @@ jobs:
       - name: build
         run: |
           mkdir /opt/bin
-          git clone --depth=1 https://github.com/felix-fly/padavan.git /opt/rt-n56u
+          #git clone --depth=1 https://github.com/felix-fly/padavan.git /opt/rt-n56u
+          git clone --depth=1 https://github.com/hanwckf/rt-n56u.git /opt/rt-n56u
           cd /opt/rt-n56u/toolchain-mipsel
           sh dl_toolchain.sh
           cd /opt/rt-n56u/trunk
