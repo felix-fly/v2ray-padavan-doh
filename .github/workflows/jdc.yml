@@ -14,35 +14,12 @@ jobs:
       - name: build
         run: |
           mkdir /opt/bin
-          #git clone --depth=1 https://github.com/felix-fly/padavan.git /opt/rt-n56u
-
-          git clone --depth=1 https://github.com/hanwckf/rt-n56u.git /opt/rt-n56u
-          # add jdc files
-          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/JDC-1.tar.gz
-          tar xzf JDC-1.tar.gz -C /opt/rt-n56u/trunk/configs/boards
-
+          git clone --depth=1 https://github.com/felix-fly/rt-n56u.git /opt/rt-n56u
           cd /opt/rt-n56u/toolchain-mipsel
           sh dl_toolchain.sh
           cd /opt/rt-n56u/trunk
 
-          # remove the dnsmasq cache size config
-          sed -i 's/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/\/\/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/' user/rc/services_ex.c
-
-          # build-in smartdns
-          rm -rf user/smartdns
-          mkdir -p user/smartdns
-          wget -P user/smartdns/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/smartdns/Makefile
-          sed -i '$a\export SSL_CERT_FILE=/usr/lib/cacert.pem' user/scripts/profile
-          # remove ui
-          sed -i 's/found_app_smartdns = 1/found_app_smartdns = 0/' user/httpd/web_ex.c
-
-          # xray
-          rm -rf user/xray
-          mkdir -p user/xray
-          wget -P user/xray/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/xray/Makefile
-
           # jdc
-          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/jdc.config -O configs/templates/JDC-1.config
           fakeroot ./build_firmware_modify JDC-1
           mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/jdc.trx
       - name: Upload artifact
