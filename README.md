@@ -4,6 +4,10 @@
 
 前期 xray 是手动安装在 storage 下，现在改为将 xray 内置到 padavan 固件中。使用 actions 来构建，笔者前期使用的是 k2p，目前换成了无线宝一代，大内存体验更好。如果是 padavan 支持的其它型号的路由，可以参考修改打造你自己的固件。
 
+ps: 目前自己编译的jdc固件没有wifi，适合做主路由配合ap的场景。关于无线试过GitHub上能找到的支持jdc的多个repo都不成功，或者一直自动重启，或者像我现在用的wifi开不出来。个人试过第三方编译好的padavan无线可用，自己编译的搞不定，希望知道的朋友不吝赐教。对比了openwrt固件，还是padavan性能更好，尤其在科学方面，4k油管cpu基本不怎么动，speedtest跑到500多cpu也没全100%。
+
+ps2：固件不包含相关插件的UI配置，所有配置在命令行下完成。
+
 自用固件可以[在 release 下载](https://github.com/felix-fly/v2ray-padavan-doh/releases)，k2p 包含了 smartdns 和 [xray](https://github.com/felix-fly/xray-openwrt/releases)，jdc多了一些USB相关的插件。如需其它插件，可以自行修改 **k2p.config** **jdc.config** 文件进行编译。
 
 **个人感觉固件很稳定，xray 性能也很强大，如果没有特殊需求不用考虑使用 v2ray**
