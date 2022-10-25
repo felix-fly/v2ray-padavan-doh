@@ -19,6 +19,7 @@ jobs:
           sh dl_toolchain.sh
           cd /opt/rt-n56u/trunk
           sed -i '$a\export SSL_CERT_FILE=/usr/lib/cacert.pem' user/scripts/profile
+          sed -i 's/size_etc="6M"/size_etc="16M"/' user/scripts/dev_init.sh
 
           # jdc
           fakeroot ./build_firmware_modify JDC-1
