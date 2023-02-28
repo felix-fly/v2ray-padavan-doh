@@ -22,7 +22,7 @@ jobs:
           sed -i 's/size_etc="6M"/size_etc="16M"/' user/scripts/dev_init.sh
 
           # jdc
-          fakeroot ./build_firmware_modify JDC-1
+          fakeroot ./build_firmware_modify JDC-1-5.0
           mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/jdc.trx
       - name: Upload artifact
         uses: actions/upload-artifact@master
