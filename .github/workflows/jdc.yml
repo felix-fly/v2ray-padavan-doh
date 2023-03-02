@@ -14,16 +14,19 @@ jobs:
       - name: build
         run: |
           mkdir /opt/bin
-          #git clone --depth=1 https://github.com/felix-fly/rt-n56u.git /opt/rt-n56u
-          git clone --depth=1 https://github.com/vb1980/Padavan-KVR.git /opt/rt-n56u
+          git clone --depth=1 https://github.com/felix-fly/padavan-jdc.git /opt/rt-n56u
           cd /opt/rt-n56u/toolchain-mipsel
           sh dl_toolchain.sh
           cd /opt/rt-n56u/trunk
           sed -i '$a\export SSL_CERT_FILE=/usr/lib/cacert.pem' user/scripts/profile
           sed -i 's/size_etc="6M"/size_etc="16M"/' user/scripts/dev_init.sh
 
+          # jdc ap
+          fakeroot ./build_firmware_modify JDC-1-AP
+          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/jdc-ap.trx
+
           # jdc
-          fakeroot ./build_firmware_modify JDC-1-5.0
+          fakeroot ./build_firmware_modify JDC-1
           mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/jdc.trx
       - name: Upload artifact
         uses: actions/upload-artifact@master
