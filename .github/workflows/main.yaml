@@ -39,12 +39,6 @@ jobs:
           wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/k2p.config -O configs/templates/K2P.config
           fakeroot ./build_firmware_modify K2P
           mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p.trx
-
-          # jdc
-          ./clear_tree
-          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/jdc.config -O configs/templates/JDC-1.config
-          fakeroot ./build_firmware_modify JDC-1
-          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/jdc.trx
       - name: Upload artifact
         uses: "marvinpinto/action-automatic-releases@latest"
         with:
