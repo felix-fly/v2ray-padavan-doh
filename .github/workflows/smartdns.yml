@@ -29,7 +29,7 @@ jobs:
           # compile smartdns
           git clone --depth=1 https://github.com/pymumu/smartdns.git /tmp/smartdns
           cd /tmp/smartdns
-          git checkout tags/Release42
+          git checkout Release42
           chmod +x ./package/build-pkg.sh
           env CFLAGS="-I/tmp/openssl/include" LDFLAGS="-L/tmp/openssl/lib" ./package/build-pkg.sh --platform linux --arch mipsel_24kc --cross-tool /tmp/rt-n56u/toolchain-mipsel/toolchain-3.4.x/bin/mipsel-linux-uclibc- --outputdir /tmp
 
