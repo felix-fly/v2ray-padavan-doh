@@ -13,15 +13,15 @@ jobs:
           sudo apt-get -y install make upx
       - name: build
         run: |
-          git clone --depth=1 https://github.com/hanwckf/rt-n56u.git /tmp/rt-n56u
+          git clone --depth=1 https://github.com/felix-fly/padavan.git /tmp/rt-n56u
           cd /tmp/rt-n56u/toolchain-mipsel
           sh dl_toolchain.sh
 
           # compile openssl
           cd /tmp
-          wget https://github.com/openssl/openssl/archive/refs/tags/OpenSSL_1_1_1j.tar.gz
-          tar xvf OpenSSL_1_1_1j.tar.gz
-          cd /tmp/openssl-OpenSSL_1_1_1j
+          wget https://github.com/openssl/openssl/archive/refs/tags/OpenSSL_1_1_1k.tar.gz
+          tar xvf OpenSSL_1_1_1k.tar.gz
+          cd /tmp/openssl-OpenSSL_1_1_1k
           ./config no-asm shared enable-ecdsa --cross-compile-prefix=/tmp/rt-n56u/toolchain-mipsel/toolchain-3.4.x/bin/mipsel-linux-uclibc- --prefix=/tmp/openssl
           sed -i 's/-pthread -m64/-pthread/g' Makefile
           make && make install
