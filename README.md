@@ -2,27 +2,27 @@
 
 本文为在 k2p 路由器使用 padavan(N56U/改华硕) 固件安装配置 v2ray/xray 的进阶流程，v2ray/xray 一揽子方案（简单）在这里[v2ray-padavan](https://github.com/felix-fly/v2ray-padavan)，本文同时也是建立在此基础上的，有些内容不做过多说明，不明白可以先看一下此文。
 
-笔者编译的固件为纯净版，release 下可自取，只包含了 smartdns 和 v2ray/xray。
+前期 xray 是手动安装在 storage 下，现在改为将 xray 内置到 padavan 固件中。使用 actions 来构建，笔者前期使用的是 k2p，目前换成了无线宝一代，大内存体验更好。如果是 padavan 支持的其它型号的路由，可以参考修改打造你自己的固件。
 
-前期 v2ray/xray 是手动安装在 storage 下，现在改为将 v2ray/xray 内置到 padavan 固件中。使用 actions 来构建，笔者使用的是 k2p，如果是 padavan 支持的其它型号的路由，可以参考修改打造你自己的固件。
+ps: 目前自己编译的jdc固件只有5G单频wifi，适合做主路由配合ap的场景或者做无线桥接。关于无线试过GitHub上能找到的支持jdc的多个repo都不成功，或者一直自动重启，或者像我现在用的只有单频wifi。个人试过第三方编译好的padavan无线可用，自己编译的搞不定，希望知道的朋友不吝赐教。另外导出了一个历史版本的仓库[padavan-jdc](https://github.com/felix-fly/padavan-jdc)驱动和代码都比较老，但是编译的固件无线是双频可用的，有需要的可以自行折腾。对比了openwrt固件，还是padavan性能更好，尤其在科学方面，4k油管cpu基本不怎么动，speedtest跑到500多cpu也没全100%。
 
-编译好的纯净版固件可以[在 release 下载](https://github.com/felix-fly/v2ray-padavan-doh/releases)，只包含了 smartdns 和 [v2ray](https://github.com/felix-fly/v2ray-openwrt/releases) / [xray](https://github.com/felix-fly/xray-openwrt/releases)。如需其它插件，可以自行修改 **k2p.config** 文件进行编译。
+ps2：固件不包含相关插件的UI配置，所有配置在命令行下完成。
 
-其中 k2p_me.trx 是我之前自己用的，固件只包含了 smartdns，可以配合独立的 v2ray/xray 设备使用（类似旁路由）。
+自用固件可以[在 release 下载](https://github.com/felix-fly/v2ray-padavan-doh/releases)，k2p 包含了 smartdns 和 [xray](https://github.com/felix-fly/xray-openwrt/releases)，jdc多了一些USB相关的插件。如需其它插件，可以自行修改 **k2p.config** **jdc.config** 文件进行编译。
 
-**个人目前在用 k2p_xray.trx，很稳定，性能也很强大，有条件的可以挑战一下科学500兆：**
+**个人感觉固件很稳定，xray 性能也很强大，如果没有特殊需求不用考虑使用 v2ray**
 
-* [榨干 MT7621 极限性能，科学跑满500兆有木有可能](https://itcao.com/2021/08232231.html)
+* [榨干 MT7621 极限性能，科学跑满500兆有木有可能 - 完全可以](https://itcao.com/2021/08232231)
 
 ## 证书
 
-v2ray/xray 使用 tls 相关协议时会需要验证证书的有效性，而 padavan 默认是没有包含 ssl 根证书的。简单的方式可以配置 v2ray/xray 不验证，但是出于安全性的考虑，还是要验证的比较好。鉴于此，固件里内置了一份证书合集，放在了
+xray 使用 tls 相关协议时会需要验证证书的有效性，而 padavan 默认是没有包含 ssl 根证书的。简单的方式可以配置 xray 不验证，但是出于安全性的考虑，还是要验证的比较好。鉴于此，固件里内置了一份证书合集，放在了
 
 * ```/usr/lib/cacert.pem```
 
 证书文件来自于 **https://curl.haxx.se/docs/caextract.html**
 
-## 配置 xray **\*\*推荐\*\*** （二选一）
+## 配置 xray
 
 将 xray 文件夹里的所有文件上传至路由器 /etc/storage/xray 目录，并添加脚本执行权限
 
@@ -30,63 +30,18 @@ v2ray/xray 使用 tls 相关协议时会需要验证证书的有效性，而 pad
 chmod +x /etc/storage/xray/*.sh
 ```
 
-## 配置 x2ray （二选一）
-
-将 v2ray 文件夹里的所有文件上传至路由器 /etc/storage/v2ray 目录，并添加脚本执行权限
-
-```bash
-chmod +x /etc/storage/v2ray/*.sh
-```
-
-## dnsmasq配置（二选一：不使用smartdns）
-
-* 将 dnsmasq 文件夹里的所有文件上传至路由器 /etc/storage/dnsmasq 目录
-
-* 通过padavan管理界面修改，dnsmasq拦截广告并将gw域名转给v2ray进行解析。
-
-**内部网络(LAN) -> DHCP服务器 -> 自定义配置文件 "dnsmasq.conf"**
-
-下面两种配置方式，选择其中一种即可
-
-### 方式一：通过 gfwlist 和 addn-hosts 参数配置
-
-这种方式通过 addn-hosts 方式屏蔽广告域名解析，测试下来有问题，直接 ping 域名会返回 0.0.0.0 但是通过 curl 或者浏览器访问域名会正常，此时再 ping 就会得到正确的地址，过一会再 ping 又回到 0.0.0.0 具体什么原因造成的目前还不清楚。如果你知道，请一定要告诉我。据说这种 addn-hosts 方式在加载大量域名时查询性能更好。
-
-```bash
-addn-hosts=/etc/storage/dnsmasq/ad.list
-gfwlist=/etc/storage/dnsmasq/gw.list@127.0.0.1#1053^gw
-```
-
-### 方式二：加载自定义配置文件
-
-目前广告列表已经超过五万条了，dnsmasq 加载后查询效率已经有所下降，具体表现为 cpu 使用率较之前有升高。如果影响正常使用，可以不加载广告规则，或者选用下面 smartdns 的方案。
-
-```bash
-conf-dir=/etc/storage/dnsmasq, *.hosts
-```
-
-**高级设置 -> 自定义设置 -> 脚本 -> 在防火墙规则启动后执行:**
-
-```bash
-/etc/storage/dnsmasq/iptables.sh
-```
-
-## dnsmasq配置（二选一：使用smartdns提供dns解析服务）
+## dnsmasq配置（使用smartdns提供dns解析服务）
 
 [**具体配置参考关于smartdns的描述**](./smartdns.md)
 
-## 设置 v2ray/xray 开机自动启动
+[不喜欢用smartdns的话单独dnsmasq也可以，查看如何配置](./dnsmasq.md)
+
+## 设置 xray 开机自动启动
 
 **系统管理 - 服务: 调度任务 (Crontab): 添加一行**
 
 ```bash
 */5 * * * * /etc/storage/xray/check.sh > /dev/null
-```
-
-或者
-
-```bash
-*/5 * * * * /etc/storage/v2ray/check.sh > /dev/null
 ```
 
 ## 保存软件及配置
@@ -100,6 +55,13 @@ padavan系统文件系统是构建在内存中的，重启后软件及配置会�
 如果一切顺利，重启路由hi起来。Good luck!
 
 ## 更新记录
+2023-03-03
+* jdc无线5G可用
+
+2022-09-19
+* 增加jdc
+* 简化流程，保留一种方案
+
 2021-09-08
 * 推荐使用smartdns及xray
 * iptables使用tproxy方式

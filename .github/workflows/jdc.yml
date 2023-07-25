@@ -1,0 +1,36 @@
+on:
+  push:
+    branches: 
+      - jdc
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: init
+        run: |
+          sudo apt-get update
+          sudo apt-get -y install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd fakeroot kmod cpio git python3-docutils gettext automake autopoint texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev libmpfr-dev libncurses5-dev libltdl-dev wget libc-dev-bin
+      - name: build
+        run: |
+          mkdir /opt/bin
+          #git clone --depth=1 https://github.com/felix-fly/padavan-jdc.git /opt/rt-n56u
+          git clone --depth=1 https://github.com/felix-fly/rt-n56u.git /opt/rt-n56u
+          cd /opt/rt-n56u/toolchain-mipsel
+          sh dl_toolchain.sh
+          cd /opt/rt-n56u/trunk
+          sed -i '$a\export SSL_CERT_FILE=/usr/lib/cacert.pem' user/scripts/profile
+          sed -i 's/size_etc="6M"/size_etc="16M"/' user/scripts/dev_init.sh
+
+          # jdc ap
+          fakeroot ./build_firmware_modify JDC-1-AP
+          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/jdc-ap.trx
+
+          # jdc
+          fakeroot ./build_firmware_modify JDC-1
+          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/jdc.trx
+      - name: Upload artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: build
+          path: /opt/bin
