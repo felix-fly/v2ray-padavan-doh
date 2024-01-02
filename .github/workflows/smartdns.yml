@@ -10,7 +10,11 @@ jobs:
       - name: init
         run: |
           sudo apt-get update
-          sudo apt-get -y install make upx
+          sudo apt-get -y install make
+          wget https://github.com/upx/upx/releases/download/v4.2.1/upx-4.2.1-amd64_linux.tar.xz
+          tar xf upx-4.2.1-amd64_linux.tar.xz
+          mv upx-4.2.1-amd64_linux/upx /tmp
+          rm -rf upx-4.2.1-amd64_linux*
       - name: build
         run: |
           git clone --depth=1 https://github.com/felix-fly/padavan.git /tmp/rt-n56u
@@ -37,10 +41,11 @@ jobs:
 
           # minimal
           mkdir /tmp/out
-          tar xvf /tmp/smartdns.*.tar.gz --directory=/tmp/out
-          upx --best --lzma /tmp/out/smartdns/usr/sbin/smartdns
           mkdir /opt/bin
-          mv /tmp/out/smartdns/usr/sbin/smartdns /opt/bin
+          tar xvf /tmp/smartdns.*.tar.gz --directory=/tmp/out
+          cp /tmp/out/smartdns/usr/sbin/smartdns /opt/bin
+          /tmp/upx --best --lzma /tmp/out/smartdns/usr/sbin/smartdns
+          mv /tmp/out/smartdns/usr/sbin/smartdns /opt/bin/smartdns-min
       - name: Upload artifact
         uses: actions/upload-artifact@master
         with:
