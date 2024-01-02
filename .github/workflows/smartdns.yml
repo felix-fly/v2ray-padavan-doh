@@ -37,10 +37,11 @@ jobs:
 
           # minimal
           mkdir /tmp/out
-          tar xvf /tmp/smartdns.*.tar.gz --directory=/tmp/out
-          upx --best --lzma /tmp/out/smartdns/usr/sbin/smartdns
           mkdir /opt/bin
-          mv /tmp/out/smartdns/usr/sbin/smartdns /opt/bin
+          tar xvf /tmp/smartdns.*.tar.gz --directory=/tmp/out
+          cp /tmp/out/smartdns/usr/sbin/smartdns /opt/bin
+          upx --best --lzma /tmp/out/smartdns/usr/sbin/smartdns
+          mv /tmp/out/smartdns/usr/sbin/smartdns /opt/bin/smartdns-min
       - name: Upload artifact
         uses: actions/upload-artifact@master
         with:
