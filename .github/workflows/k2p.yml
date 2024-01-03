@@ -1,0 +1,52 @@
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: init
+        run: |
+          sudo apt-get update
+          sudo apt-get -y install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd fakeroot kmod cpio git python3-docutils gettext automake autopoint texinfo build-essential help2man pkg-config zlib1g-dev libgmp3-dev libmpfr-dev libncurses5-dev libltdl-dev wget libc-dev-bin
+      - name: build
+        run: |
+          mkdir /opt/bin
+          #git clone --depth=1 https://github.com/felix-fly/padavan.git /opt/rt-n56u
+          git clone --depth=1 https://github.com/felix-fly/rt-n56u.git /opt/rt-n56u
+          cd /opt/rt-n56u/toolchain-mipsel
+          sh dl_toolchain.sh
+          cd /opt/rt-n56u/trunk
+
+          # enlarge storage size
+          sed -i 's/PART_SIZ=0x80000/PART_SIZ=0x100000/' configs/boards/K2P/kernel-3.4.x-5.0.config
+          sed -i 's/PART_SIZ=0x80000/PART_SIZ=0x100000/' configs/boards/K2P/kernel-3.4.x.config
+          sed -i 's/65536/131072/' user/scripts/mtd_storage.sh
+
+          # remove the dnsmasq cache size config
+          sed -i 's/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/\/\/fprintf(fp, "cache-size=%d\\n", DNS_RELAY_CACHE_MAX);/' user/rc/services_ex.c
+
+          # build-in smartdns
+          rm -rf user/smartdns
+          mkdir -p user/smartdns
+          wget -P user/smartdns/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/smartdns/Makefile
+          sed -i '$a\export SSL_CERT_FILE=/usr/lib/cacert.pem' user/scripts/profile
+          # remove ui
+          sed -i 's/found_app_smartdns = 1/found_app_smartdns = 0/' user/httpd/web_ex.c
+
+          # build-in xray
+          rm -rf user/xray
+          mkdir -p user/xray
+          wget -P user/xray/ https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/padavan/xray/Makefile
+
+          # k2p
+          wget https://raw.githubusercontent.com/felix-fly/v2ray-padavan-doh/master/k2p.config -O configs/templates/K2P.config
+          fakeroot ./build_firmware_modify K2P
+          mv /opt/rt-n56u/trunk/images/*.trx /opt/bin/k2p.trx
+      - name: Upload artifact
+        uses: actions/upload-artifact@master
+        with:
+          name: build
+          path: /opt/bin
