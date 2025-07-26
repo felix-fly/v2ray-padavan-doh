@@ -33,7 +33,7 @@ jobs:
           # compile smartdns
           git clone https://github.com/pymumu/smartdns.git /tmp/smartdns
           cd /tmp/smartdns
-          git checkout tags/Release46
+          git checkout tags/Release46.1
           # fix for build error: initializer element is not constant
           sed -i 's/delay = delay_value/delay = 3/g' src/dns_client.c
           chmod +x ./package/build-pkg.sh
